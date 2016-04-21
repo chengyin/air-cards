@@ -169,6 +169,8 @@
 
 	render();
 
+	console.log('%cOh hey, no, code quality not found.', 'font-weight: bold; font-size: 18px;');
+
 /***/ },
 
 /***/ 2:
