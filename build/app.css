@@ -5108,6 +5108,10 @@ td.show-lg {
 
 
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: #edefed;
 }
@@ -5127,7 +5131,10 @@ h1 {
 }
 
 #tags {
+  height: 100px;
   margin: 0 -4px;
+  overflow: hidden;
+  transition: 200ms ease height;
 }
 
 .tag {
@@ -5178,9 +5185,31 @@ h1 {
   color: white;
 }
 
-.air-card__image > img {
+.air-card__image {
+  position: relative;
+}
+
+.air-card__image:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+.air-card__image > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.air-card__image .image {
+  height: 100%;
   width: 100%;
   border-radius: 12px 12px 0 0;
+  background-position: center center;
+  background-size: cover;
 }
 
 .air-card__name,
@@ -5259,4 +5288,30 @@ h1 {
   font-size: 20px;
   margin-left: 4px;
   padding: 2px 4px;
+}
+
+.header-more {
+  font-size: 2em;
+  line-height: 0;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.header-more::before {
+  border-color: white;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.6em;
+  opacity: 0.75;
+  position: relative;
+  top: 0;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 0.6em;
+}
+
+.expanded .header-more {
+  visibility: hidden;
 }
