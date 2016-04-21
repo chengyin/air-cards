@@ -85,7 +85,9 @@ const getCardElement = (person, id) => {
 <div class="air-card-container">
   <div class="air-card" style="background-color: ${color}; border-color: ${color};">
     <div class="air-card__image">
-      <img src="http://lorempixel.com/300/300/?q=${person.lastName}" />
+      <a href="${person.profile}">
+        <img src="http://lorempixel.com/300/300/?q=${person.lastName}" />
+      </a>
     </div>
     <div class="air-card__name">
       ${person.firstName} ${person.lastName}

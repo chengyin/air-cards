@@ -71,7 +71,7 @@ h1 {
   color: white;
 }
 
-.air-card__image > img {
+.air-card__image img {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
