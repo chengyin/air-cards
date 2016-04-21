@@ -164,8 +164,42 @@ const render = () => {
     grid.style.visibility = 'visible';
   });
 
-  let tagsContainer = document.getElementById('tags');
+  const header = document.getElementById('header');
+  const filterHeader = document.getElementById('filter-header');
+
+  const tagsContainer = document.getElementById('tags');
+  const tagsInner = document.createElement('div');
+  tagsContainer.appendChild(tagsInner);
+
+  const expand = () => {
+    tagsContainer.style.height = tagsInner.offsetHeight + 'px';
+    header.classList.add('expanded');
+  };
+
+  const collapse = () => {
+    tagsContainer.style.height = '';
+    header.classList.remove('expanded');
+  };
+
+  header.addEventListener('touchstart', expand, false);
+  header.addEventListener('mouseenter', expand, false);
+  header.addEventListener('touchstart', expand, false);
+  header.addEventListener('mouseleave', collapse, false);
+  // XXX: I did not test this at all.
+  tagsContainer.addEventListener('touchend', (event) => {
+    const target = event.target;
+    if (target.classList.contains('tag')) {
+      collapse();
+    }
+  }, false);
+
   getTagElements(getAllTags(people), (tag) => {
+    if (tag) {
+      filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
+    } else {
+      filterHeader.innerHTML = '';
+    }
+
     isotope.arrange({
       filter: elem => {
         if (!tag) {
@@ -179,10 +213,9 @@ const render = () => {
         return tags.indexOf(tag) !== -1;
       }
     });
-  }).forEach(tag => tagsContainer.appendChild(tag));
+  }).forEach(tag => tagsInner.appendChild(tag));
 
-  // makeHeaderFixed();
-  // window.onresize = makeHeaderFixed;
+
 };
 
 render();
