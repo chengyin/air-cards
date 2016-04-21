@@ -5108,6 +5108,10 @@ td.show-lg {
 
 
 
+body {
+  background: #edefed;
+}
+
 header {
   left: 0;
   padding: 20px 0;
@@ -5122,15 +5126,20 @@ h1 {
   margin: 10px 0;
 }
 
+#tags {
+  margin: 0 -4px;
+}
+
 .tag {
   background: white;
   border-radius: 2px;
   color: #565a5c;
   cursor: pointer;
   display: inline-block;
+  font-size: 14px;
   font-weight: bold;
   margin: 4px;
-  padding: 4px 12px;
+  padding: 3px 10px;
   transition: all 0.2s ease;
 }
 
@@ -5146,32 +5155,108 @@ h1 {
 .grid-item {
   background: white;
   margin: 5px;
-  padding: 10px;
-  text-align: center;
-  width: calc(25% - 10px);
+  padding: 5px;
+  width: calc(33.3333% - 10px);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .grid-item {
     width: calc(50% - 10px);
   }
 }
 
-.air-card__name {
-  font-weight: bold;
-  margin-bottom: 10px;
+@media (max-width: 735px) {
+  .grid-item {
+    width: calc(100% - 10px);
+  }
 }
 
-.air-card__image {
-  margin-bottom: 10px;
+.air-card {
+  border-radius: 15px;
+  border: 3px solid #007a87;
+  background: #007a87;
+  color: white;
 }
 
 .air-card__image > img {
   width: 100%;
+  border-radius: 12px 12px 0 0;
 }
 
-.air-card__description {
+.air-card__name,
+.air-card__info {
+  margin: 10px;
+}
+
+.air-card__name {
+  margin-bottom: 20px;
+}
+
+.air-card__info__label {
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 23px;
+}
+
+.air-card__info__value {
+  font-size: 16px;
+  font-weight: 300;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
-  text-overflow: ellipsis;;
+}
+
+@media (min-width: 736px) {
+  .air-card__info__label {
+    float: left;
+    width: 50px;
+  }
+
+  .air-card__info__value {
+    width: calc(100% - 50px);
+  }
+}
+
+.air-card__name {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.air-card__hr {
+  height: 1px;
+  background: white;
+  margin: 10px;
+}
+
+.air-card__stats {
+  font-size: 14px;
+}
+
+.air-card__stats th {
+  font-weight: normal;
+  width: 100%;
+  white-space: normal;
+  text-transform: capitalize;
+}
+
+.air-card__stats td {
+  font-weight: bold;
+  text-align: right;
+}
+
+.air-card__footer {
+  margin: 20px 10px 10px 10px;
+  text-align: right;
+}
+
+.air-card__footer a:hover {
+  text-decoration: none;
+}
+
+.air-card__footer .icon {
+  font-size: 20px;
+  margin-left: 4px;
+  padding: 2px 4px;
 }
