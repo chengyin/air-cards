@@ -7,8 +7,6 @@
     "lastName": "Alexander",
     "profile": "https://one.airbnb.com/people/ashley_alexander",
     "role": "Talent Partner",
-    "tags": [],
-    "team": "Talent Partners",
     "stats": [
       {
         "label": "Crutches Has Now",
@@ -22,7 +20,13 @@
         "label": "Sega Genesis",
         "value": "1"
       }
-    ]
+    ],
+    "tags": [
+      "#socks",
+      "#dance",
+      "#oldersisters"
+    ],
+    "team": "Talent Partners"
   },
   {
     "animal": "T-Rex",
@@ -32,8 +36,6 @@
     "lastName": "Zhou",
     "profile": "https://one.airbnb.com/people/yitong_zhou",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Bowls of Rice in 1 Meal PR",
@@ -47,7 +49,9 @@
         "label": "Lightsabers",
         "value": "3"
       }
-    ]
+    ],
+    "tags": [],
+    "team": "Engineering"
   },
   {
     "animal": "Panther",
@@ -57,8 +61,6 @@
     "lastName": "Linshi",
     "profile": "https://one.airbnb.com/people/jack_linshi",
     "role": "Data Researcher & Writer",
-    "tags": [],
-    "team": "Communications",
     "stats": [
       {
         "label": "Finish War and Peace In",
@@ -72,7 +74,9 @@
         "label": "Paintings Made out of Food",
         "value": "8"
       }
-    ]
+    ],
+    "tags": [],
+    "team": "Communications"
   },
   {
     "animal": "Racoon",
@@ -82,8 +86,6 @@
     "lastName": "Pourshian",
     "profile": "https://one.airbnb.com/people/poyan_pourshian",
     "role": "Experience Designer",
-    "tags": [],
-    "team": "Design",
     "stats": [
       {
         "label": "Guitars",
@@ -97,7 +99,19 @@
         "label": "",
         "value": ""
       }
-    ]
+    ],
+    "tags": [
+      "gardening",
+      "bicycles",
+      "Experience Design",
+      "Guitar",
+      "#Canada",
+      "Design",
+      "Video Editing",
+      "sci-fi",
+      "Photography"
+    ],
+    "team": "Design"
   },
   {
     "animal": "Panda",
@@ -107,8 +121,6 @@
     "lastName": "He",
     "profile": "https://one.airbnb.com/people/weibo_he",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "BS+MS Got In",
@@ -122,7 +134,13 @@
         "label": "Daily Sleep Hours",
         "value": "8+"
       }
-    ]
+    ],
+    "tags": [
+      "Basketball",
+      "Scala",
+      "Ping Pong"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Liger",
@@ -132,8 +150,6 @@
     "lastName": "Houser",
     "profile": "https://one.airbnb.com/people/cammy_houser",
     "role": "Regional Market Manager - Mid Atlantic",
-    "tags": [],
-    "team": "VR North America",
     "stats": [
       {
         "label": "Donkeys as pets growing up",
@@ -147,7 +163,21 @@
         "label": "Hawk Hill Avg Time",
         "value": "9h 44m"
       }
-    ]
+    ],
+    "tags": [
+      "Gluten Free",
+      "Cycling",
+      "good reads",
+      "AirMax90s",
+      "Skiing",
+      "bangs",
+      "Community Volunteer",
+      "Catan",
+      "puzzles",
+      "New England Patriots",
+      "national parks"
+    ],
+    "team": "VR North America"
   },
   {
     "animal": "Griffin",
@@ -157,8 +187,6 @@
     "lastName": "Hou",
     "profile": "https://one.airbnb.com/people/crystal_hou",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Mysteries",
     "stats": [
       {
         "label": "",
@@ -172,7 +200,9 @@
         "label": "",
         "value": ""
       }
-    ]
+    ],
+    "tags": [],
+    "team": "Mysteries"
   },
   {
     "animal": "Platypus",
@@ -182,8 +212,6 @@
     "lastName": "Sobel",
     "profile": "https://one.airbnb.com/people/jason_sobel",
     "role": "Engineering Manager",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Gray hair before kids",
@@ -197,7 +225,18 @@
         "label": "Murph PR",
         "value": "48m 23s"
       }
-    ]
+    ],
+    "tags": [
+      "CrossFit",
+      "Snowboarding",
+      "Water Skiing",
+      "Parenting",
+      "Acting",
+      "Food",
+      "Wine",
+      "Skiing"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Orca",
@@ -207,8 +246,6 @@
     "lastName": "Blanton",
     "profile": "https://one.airbnb.com/people/clay_blanton",
     "role": "QA Lead - Enterprise Applications",
-    "tags": [],
-    "team": "ITX",
     "stats": [
       {
         "label": "Sons",
@@ -222,7 +259,23 @@
         "label": "Best round of golf",
         "value": "72"
       }
-    ]
+    ],
+    "tags": [
+      "Call centers",
+      "craft beer",
+      "meditation",
+      "College Football",
+      "Customer Care",
+      "Guitar",
+      "southern hospitality",
+      "golf",
+      "Being a middle child",
+      "Hawaii",
+      "CX",
+      "The South",
+      "IVR"
+    ],
+    "team": "ITX"
   },
   {
     "animal": "Eagle",
@@ -232,8 +285,6 @@
     "lastName": "Deschamps",
     "profile": "https://one.airbnb.com/people/manuel_deschamps",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Daughter",
@@ -247,7 +298,9 @@
         "label": "Baby on the way",
         "value": "1"
       }
-    ]
+    ],
+    "tags": [],
+    "team": "Engineering"
   },
   {
     "animal": "Dragon",
@@ -257,14 +310,6 @@
     "lastName": "Liu",
     "profile": "https://one.airbnb.com/people/chengyin_liu",
     "role": "Software Engineer",
-    "tags": [
-      "sailing",
-      "CrossFit",
-      "JavaScript",
-      "iOS Development",
-      "React"
-    ],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Back Squat PR",
@@ -278,7 +323,15 @@
         "label": "Kisses from Lady Gaga",
         "value": "2"
       }
-    ]
+    ],
+    "tags": [
+      "JavaScript",
+      "React",
+      "iOS Development",
+      "CrossFit",
+      "sailing"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Dolphin",
@@ -288,8 +341,6 @@
     "lastName": "Subbaroyan",
     "profile": "https://one.airbnb.com/people/ram_subbaroyan",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Cabins burnt",
@@ -303,7 +354,15 @@
         "label": "squash level",
         "value": "4"
       }
-    ]
+    ],
+    "tags": [
+      "Raising Sons",
+      "Raising Daughters",
+      "Squash",
+      "woodworking",
+      "Home Improvement"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Panther",
@@ -313,17 +372,6 @@
     "lastName": "Dabriwal",
     "profile": "https://one.airbnb.com/people/shashank_dabriwal",
     "role": "Software Engineer",
-    "tags": [
-      "Classic Literature",
-      "Data Infrastructure",
-      "Politics",
-      "Programming Languages",
-      "Traveling India",
-      "poetry",
-      "Science",
-      "Web Programming"
-    ],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Tallest in the family",
@@ -337,7 +385,15 @@
         "label": "Years since quitting smoking",
         "value": "2.5yrs"
       }
-    ]
+    ],
+    "tags": [
+      "Science",
+      "Politics",
+      "Classic Literature",
+      "Travel",
+      "poetry"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Eagle",
@@ -347,8 +403,6 @@
     "lastName": "Ho",
     "profile": "https://one.airbnb.com/people/jamie_ho",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Sons",
@@ -362,7 +416,19 @@
         "label": "Years living in Bay Area",
         "value": "16yrs"
       }
-    ]
+    ],
+    "tags": [
+      "Baseball",
+      "Basketball",
+      "Being a Parent",
+      "Golden State Warriors",
+      "Hockey",
+      "Java",
+      "San Francisco Giants",
+      "Toronto",
+      "#Canada"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Racoon",
@@ -372,17 +438,6 @@
     "lastName": "Su",
     "profile": "https://one.airbnb.com/people/jerry_su",
     "role": "Software Engineer",
-    "tags": [
-      "CSS",
-      "Bubble Tea",
-      "Sushi",
-      "DIY",
-      "JavaScript",
-      "React",
-      "Snowboarding",
-      "iOS"
-    ],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Countries Traveled in 2014",
@@ -396,7 +451,18 @@
         "label": "Rubik Cube Solving time",
         "value": "60s-"
       }
-    ]
+    ],
+    "tags": [
+      "iOS",
+      "Sushi",
+      "CSS",
+      "DIY",
+      "Snowboarding",
+      "React",
+      "JavaScript",
+      "Bubble Tea"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Dragon",
@@ -406,8 +472,6 @@
     "lastName": "Dai",
     "profile": "https://one.airbnb.com/people/peng_dai",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Countries Lived for 1+ yr",
@@ -421,7 +485,9 @@
         "label": "1-day Driving distance PR",
         "value": "800+ mi"
       }
-    ]
+    ],
+    "tags": [],
+    "team": "Engineering"
   },
   {
     "animal": "Orca",
@@ -431,16 +497,6 @@
     "lastName": "Wolfe",
     "profile": "https://one.airbnb.com/people/brian_wolfe",
     "role": "Software Engineer",
-    "tags": [
-      "Mathematics",
-      "Mandarin Chinese",
-      "Science",
-      "C",
-      "Python",
-      "robots",
-      "Being Tall"
-    ],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Longest run",
@@ -454,7 +510,17 @@
         "label": "Mandarin words known",
         "value": "2000"
       }
-    ]
+    ],
+    "tags": [
+      "Python",
+      "Mathematics",
+      "Science",
+      "C",
+      "Mandarin Chinese",
+      "Being Tall",
+      "robots"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Monkey",
@@ -464,8 +530,6 @@
     "lastName": "Martin",
     "profile": "https://one.airbnb.com/people/peter_martin",
     "role": "Digital Platform Developer",
-    "tags": [],
-    "team": "Public Policy - Justice",
     "stats": [
       {
         "label": "Son",
@@ -479,7 +543,17 @@
         "label": "Concussions Had",
         "value": "7"
       }
-    ]
+    ],
+    "tags": [
+      "woodworking",
+      "Boston",
+      "Coffee",
+      "Boston Red Sox",
+      "Photography",
+      "Politics",
+      "David Bowie"
+    ],
+    "team": "Public Policy - Justice"
   },
   {
     "animal": "Sea Turtle",
@@ -489,8 +563,6 @@
     "lastName": "Ding",
     "profile": "https://one.airbnb.com/people/chen_ding",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "3-month weight lose",
@@ -504,7 +576,12 @@
         "label": "Hours awaken PR",
         "value": "44"
       }
-    ]
+    ],
+    "tags": [
+      "Basketball",
+      "Hiking"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Platypus",
@@ -514,18 +591,6 @@
     "lastName": "Williams",
     "profile": "https://one.airbnb.com/people/mars_williams",
     "role": "Data Engineer",
-    "tags": [
-      "#proust",
-      "#Berlin",
-      "#salsa",
-      "#dreamcolor",
-      "#bikes",
-      "#teaching",
-      "#hitchhikingtomeetyourfavoriteauthor",
-      "#cyborgism",
-      "#leadingtoursinacityyoudontknow"
-    ],
-    "team": "Data Engineering",
     "stats": [
       {
         "label": "Hitchhiked Countries",
@@ -539,7 +604,18 @@
         "label": "Roommates in 215 sqft",
         "value": "4"
       }
-    ]
+    ],
+    "tags": [
+      "#python",
+      "#salsa",
+      "#cyborgism",
+      "#proust",
+      "#bikes",
+      "#leadingtoursinacityyoudontknow",
+      "#Berlin",
+      "#teaching"
+    ],
+    "team": "Data Engineering"
   },
   {
     "animal": "Sea Turtle",
@@ -549,8 +625,6 @@
     "lastName": "Roth",
     "profile": "https://one.airbnb.com/people/nicholas_roth",
     "role": "Manager, Strategic Development",
-    "tags": [],
-    "team": "FP&A",
     "stats": [
       {
         "label": "Mid School Rock Band",
@@ -564,7 +638,31 @@
         "label": "Times cooked in the past 4yrs",
         "value": "2"
       }
-    ]
+    ],
+    "tags": [
+      "New York",
+      "accosting dogs",
+      "NYC",
+      "Iceland",
+      "#coffee",
+      "Guitar",
+      "bicycles",
+      "english bulldogs",
+      "New England",
+      "harry potter",
+      "New York City",
+      "Inbox Zero",
+      "French",
+      "tea",
+      "Bike Commuting",
+      "Squash",
+      "Economics",
+      "rubiks cubes",
+      "GTD",
+      "Game of Thrones",
+      "French language"
+    ],
+    "team": "FP&A"
   },
   {
     "animal": "Griffin",
@@ -574,8 +672,6 @@
     "lastName": "Feng",
     "profile": "https://one.airbnb.com/people/jie_feng",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "",
@@ -589,7 +685,9 @@
         "label": "",
         "value": ""
       }
-    ]
+    ],
+    "tags": [],
+    "team": "Engineering"
   },
   {
     "animal": "Monkey",
@@ -599,18 +697,6 @@
     "lastName": "Qureshi",
     "profile": "https://one.airbnb.com/people/haseeb_qureshi",
     "role": "Software Engineer",
-    "tags": [
-      "effective altruism",
-      "React",
-      "poetry",
-      "Poker",
-      "meditation",
-      "CrossFit",
-      "Ruby",
-      "Paleo",
-      "boxing"
-    ],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Years Drinking only water",
@@ -624,7 +710,19 @@
         "label": "Crazy Aunts",
         "value": "9"
       }
-    ]
+    ],
+    "tags": [
+      "poetry",
+      "CrossFit",
+      "boxing",
+      "Poker",
+      "Ruby",
+      "React",
+      "Paleo",
+      "effective altruism",
+      "meditation"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Dolphin",
@@ -634,8 +732,6 @@
     "lastName": "Zhang",
     "profile": "https://one.airbnb.com/people/tang_zhang",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Stuffed Animals in Apt",
@@ -649,7 +745,13 @@
         "label": "HIMYM Runs",
         "value": "3"
       }
-    ]
+    ],
+    "tags": [
+      "Movies",
+      "Food",
+      "Asian Food"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Panda",
@@ -659,8 +761,6 @@
     "lastName": "Alavizadeh",
     "profile": "https://one.airbnb.com/people/fatemeh_alavizadeh",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Paintings lessons taken",
@@ -674,7 +774,16 @@
         "label": "Master degrees",
         "value": "2"
       }
-    ]
+    ],
+    "tags": [
+      "Android",
+      "painting",
+      "Biking",
+      "Reading",
+      "Barry's Bootcamp",
+      "Art and Design"
+    ],
+    "team": "Engineering"
   },
   {
     "animal": "Liger",
@@ -684,8 +793,6 @@
     "lastName": "Lou",
     "profile": "https://one.airbnb.com/people/yin_lou",
     "role": "Software Engineer",
-    "tags": [],
-    "team": "Engineering",
     "stats": [
       {
         "label": "Continents Traveled",
@@ -699,6 +806,11 @@
         "label": "Years collecting stamps",
         "value": "20"
       }
-    ]
+    ],
+    "tags": [
+      "Machine Learning",
+      "Yoga"
+    ],
+    "team": "Engineering"
   }
 ]
