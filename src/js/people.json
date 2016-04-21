@@ -36,16 +36,16 @@
     "team": "Engineering",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Bowls of Rice in 1 Meal PR",
+        "value": "10"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Pokemons collectin Green",
+        "value": "146"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Lightsabers",
+        "value": "3"
       }
     ]
   },
@@ -86,12 +86,12 @@
     "team": "Design",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Guitars",
+        "value": "5"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Hot Sauces",
+        "value": "21"
       },
       {
         "label": "",
@@ -136,15 +136,15 @@
     "team": "VR North America",
     "stats": [
       {
-        "label": "Childhood donkey pets",
+        "label": "Donkeys as pets growing up",
         "value": "4"
       },
       {
-        "label": "Wishes to be in JB's Sorry",
+        "label": "M&Ms Eaten",
         "value": "11bi"
       },
       {
-        "label": "Hawk Hill PR",
+        "label": "Hawk Hill Avg Time",
         "value": "9h 44m"
       }
     ]
@@ -326,16 +326,16 @@
     "team": "Engineering",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Tallest in the family",
+        "value": "162cm"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Contries traveled",
+        "value": "15"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Years since quitting smoking",
+        "value": "2.5yrs"
       }
     ]
   },
@@ -351,16 +351,16 @@
     "team": "Engineering",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Sons",
+        "value": "3"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Walk to Work",
+        "value": "1.4mi"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Years living in Bay Area",
+        "value": "16yrs"
       }
     ]
   },
@@ -493,16 +493,16 @@
     "team": "Engineering",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "3-month weight lose",
+        "value": "40lbs"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Weekly running during ^",
+        "value": "12mi"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Hours awaken PR",
+        "value": "44"
       }
     ]
   },
@@ -557,12 +557,12 @@
         "value": "1"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Months b/w me and my twin bros",
+        "value": "15"
       },
       {
-        "label": "Rubik Solving",
-        "value": "73s"
+        "label": "Times cooked in the past 4yrs",
+        "value": "2"
       }
     ]
   },
@@ -638,16 +638,16 @@
     "team": "Engineering",
     "stats": [
       {
-        "label": "3-month weight lose",
-        "value": "40lbs"
+        "label": "Stuffed Animals in Apt",
+        "value": "9"
       },
       {
-        "label": "Weekly running during ^",
-        "value": "12mi"
+        "label": "Spicy tolerance",
+        "value": "5/5"
       },
       {
-        "label": "Hours awaken PR",
-        "value": "44"
+        "label": "HIMYM Runs",
+        "value": "3"
       }
     ]
   },
@@ -688,16 +688,16 @@
     "team": "Engineering",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Continents Traveled",
+        "value": "5"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Miles biked last year",
+        "value": "2000"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Years collecting stamps",
+        "value": "20"
       }
     ]
   }
