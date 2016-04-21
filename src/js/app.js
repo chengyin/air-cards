@@ -80,13 +80,14 @@ const getCardElement = (person, id) => {
   div.setAttribute('data-id', id);
 
   const stats = person.stats || [];
+  const imageURL = `src/img/${person.firstName.toLowerCase()}_${person.lastName.toLowerCase()}.jpg`;
 
   div.innerHTML = `
 <div class="air-card-container">
   <div class="air-card" style="background-color: ${color}; border-color: ${color};">
     <div class="air-card__image">
       <a href="${person.profile}">
-        <img src="http://lorempixel.com/300/300/?q=${person.lastName}" />
+        <div class="image" style="background-image:url(${imageURL})"></div>
       </a>
     </div>
     <div class="air-card__name">

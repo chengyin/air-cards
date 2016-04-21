@@ -71,9 +71,31 @@ h1 {
   color: white;
 }
 
-.air-card__image img {
+.air-card__image {
+  position: relative;
+}
+
+.air-card__image:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+.air-card__image > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.air-card__image .image {
+  height: 100%;
   width: 100%;
   border-radius: 12px 12px 0 0;
+  background-position: center center;
+  background-size: cover;
 }
 
 .air-card__name,

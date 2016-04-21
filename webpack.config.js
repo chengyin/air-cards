@@ -28,7 +28,7 @@ module.exports = {
             },
             {
               test: /\.(png|jpg)$/,
-              loader: 'url-loader?limit=8192'
+              loader: 'file?hash=sha512&digest=hex&name=[hash].[ext]'
             }
         ]
     },
