@@ -73,6 +73,7 @@ const tagRemapping = {
   'golden state warriors': 'Basketball',
   'react': 'JavaScript',
   'sushi': 'Asian Food',
+  'parenting': 'Being a Parent',
 };
 
 // Clean up tags a bit
@@ -162,24 +163,26 @@ const getCardElement = (person, id) => {
         <div class="image" style="background-image:url(${imageURL})"></div>
       </a>
     </div>
-    <div class="air-card__name">
-      ${person.firstName} ${person.lastName}
-      <div class="air-card__icons">
-        <i title="${titleLine}" class="icon ${teamIcon}"></i>
+    <div class="air-card__content">
+      <div class="air-card__name">
+        ${person.firstName} ${person.lastName}
+        <div class="air-card__icons">
+          <i title="${titleLine}" class="icon ${teamIcon}"></i>
+        </div>
       </div>
-    </div>
-    <div class="air-card__role">
-      ${titleLine}
-    </div>
-    <div class="air-card__info">
-      <div class="air-card__info__value">
-        <table class="air-card__stats">
-          <tbody>
-            ${getStatHTML(stats[0])}
-            ${getStatHTML(stats[1])}
-            ${getStatHTML(stats[2])}
-          </tbody>
-        </table>
+      <div class="air-card__role">
+        ${titleLine}
+      </div>
+      <div class="air-card__info">
+        <div class="air-card__info__value">
+          <table class="air-card__stats">
+            <tbody>
+              ${getStatHTML(stats[0])}
+              ${getStatHTML(stats[1])}
+              ${getStatHTML(stats[2])}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
