@@ -22,9 +22,9 @@
       }
     ],
     "tags": [
-      "#socks",
-      "#dance",
-      "#oldersisters"
+      "Socks",
+      "Dance",
+      "Oldersisters"
     ],
     "team": "Talent Partners"
   },
@@ -101,14 +101,14 @@
       }
     ],
     "tags": [
-      "gardening",
-      "bicycles",
-      "Experience Design",
+      "Gardening",
+      "Bicycles",
+      "Experience design",
       "Guitar",
-      "#Canada",
+      "Canada",
       "Design",
-      "Video Editing",
-      "sci-fi",
+      "Video editing",
+      "Sci-fi",
       "Photography"
     ],
     "team": "Design"
@@ -138,7 +138,7 @@
     "tags": [
       "Basketball",
       "Scala",
-      "Ping Pong"
+      "Ping pong"
     ],
     "team": "Engineering"
   },
@@ -165,17 +165,17 @@
       }
     ],
     "tags": [
-      "Gluten Free",
+      "Gluten free",
       "Cycling",
-      "good reads",
-      "AirMax90s",
+      "Good reads",
+      "Airmax90s",
       "Skiing",
-      "bangs",
-      "Community Volunteer",
+      "Bangs",
+      "Community volunteer",
       "Catan",
-      "puzzles",
-      "New England Patriots",
-      "national parks"
+      "Puzzles",
+      "New england patriots",
+      "National parks"
     ],
     "team": "VR North America"
   },
@@ -202,7 +202,7 @@
       }
     ],
     "tags": [],
-    "team": "Mysteries"
+    "team": "Communications"
   },
   {
     "animal": "Platypus",
@@ -227,9 +227,9 @@
       }
     ],
     "tags": [
-      "CrossFit",
+      "Crossfit",
       "Snowboarding",
-      "Water Skiing",
+      "Water skiing",
       "Parenting",
       "Acting",
       "Food",
@@ -262,18 +262,18 @@
     ],
     "tags": [
       "Call centers",
-      "craft beer",
-      "meditation",
-      "College Football",
-      "Customer Care",
+      "Craft beer",
+      "Meditation",
+      "College football",
+      "Customer care",
       "Guitar",
-      "southern hospitality",
-      "golf",
+      "Southern hospitality",
+      "Golf",
       "Being a middle child",
       "Hawaii",
-      "CX",
-      "The South",
-      "IVR"
+      "Cx",
+      "The south",
+      "Ivr"
     ],
     "team": "ITX"
   },
@@ -325,11 +325,11 @@
       }
     ],
     "tags": [
-      "JavaScript",
+      "Javascript",
       "React",
-      "iOS Development",
-      "CrossFit",
-      "sailing"
+      "Ios development",
+      "Crossfit",
+      "Sailing"
     ],
     "team": "Engineering"
   },
@@ -356,11 +356,11 @@
       }
     ],
     "tags": [
-      "Raising Sons",
-      "Raising Daughters",
+      "Raising sons",
+      "Raising daughters",
       "Squash",
-      "woodworking",
-      "Home Improvement"
+      "Woodworking",
+      "Home improvement"
     ],
     "team": "Engineering"
   },
@@ -389,9 +389,9 @@
     "tags": [
       "Science",
       "Politics",
-      "Classic Literature",
+      "Classic literature",
       "Travel",
-      "poetry"
+      "Poetry"
     ],
     "team": "Engineering"
   },
@@ -420,13 +420,13 @@
     "tags": [
       "Baseball",
       "Basketball",
-      "Being a Parent",
-      "Golden State Warriors",
+      "Being a parent",
+      "Golden state warriors",
       "Hockey",
       "Java",
-      "San Francisco Giants",
+      "San francisco giants",
       "Toronto",
-      "#Canada"
+      "Canada"
     ],
     "team": "Engineering"
   },
@@ -453,14 +453,14 @@
       }
     ],
     "tags": [
-      "iOS",
+      "Ios",
       "Sushi",
-      "CSS",
-      "DIY",
+      "Css",
+      "Diy",
       "Snowboarding",
       "React",
-      "JavaScript",
-      "Bubble Tea"
+      "Javascript",
+      "Bubble tea"
     ],
     "team": "Engineering"
   },
@@ -516,9 +516,9 @@
       "Mathematics",
       "Science",
       "C",
-      "Mandarin Chinese",
-      "Being Tall",
-      "robots"
+      "Mandarin chinese",
+      "Being tall",
+      "Robots"
     ],
     "team": "Engineering"
   },
@@ -545,13 +545,13 @@
       }
     ],
     "tags": [
-      "woodworking",
+      "Woodworking",
       "Boston",
       "Coffee",
-      "Boston Red Sox",
+      "Boston red sox",
       "Photography",
       "Politics",
-      "David Bowie"
+      "David bowie"
     ],
     "team": "Public Policy - Justice"
   },
@@ -606,14 +606,14 @@
       }
     ],
     "tags": [
-      "#python",
-      "#salsa",
-      "#cyborgism",
-      "#proust",
-      "#bikes",
-      "#leadingtoursinacityyoudontknow",
-      "#Berlin",
-      "#teaching"
+      "Python",
+      "Salsa",
+      "Cyborgism",
+      "Proust",
+      "Bikes",
+      "Leadingtoursinacityyoudontknow",
+      "Berlin",
+      "Teaching"
     ],
     "team": "Data Engineering"
   },
@@ -640,26 +640,26 @@
       }
     ],
     "tags": [
-      "New York",
-      "accosting dogs",
-      "NYC",
+      "New york",
+      "Accosting dogs",
+      "Nyc",
       "Iceland",
-      "#coffee",
+      "Coffee",
       "Guitar",
-      "bicycles",
-      "english bulldogs",
-      "New England",
-      "harry potter",
-      "New York City",
-      "Inbox Zero",
+      "Bicycles",
+      "English bulldogs",
+      "New england",
+      "Harry potter",
+      "New york city",
+      "Inbox zero",
       "French",
-      "tea",
-      "Bike Commuting",
+      "Tea",
+      "Bike commuting",
       "Squash",
       "Economics",
-      "rubiks cubes",
-      "GTD",
-      "Game of Thrones",
+      "Rubiks cubes",
+      "Gtd",
+      "Game of thrones",
       "French language"
     ],
     "team": "FP&A"
@@ -712,15 +712,15 @@
       }
     ],
     "tags": [
-      "poetry",
-      "CrossFit",
-      "boxing",
+      "Poetry",
+      "Crossfit",
+      "Boxing",
       "Poker",
       "Ruby",
       "React",
       "Paleo",
-      "effective altruism",
-      "meditation"
+      "Effective altruism",
+      "Meditation"
     ],
     "team": "Engineering"
   },
@@ -749,7 +749,7 @@
     "tags": [
       "Movies",
       "Food",
-      "Asian Food"
+      "Asian food"
     ],
     "team": "Engineering"
   },
@@ -777,11 +777,11 @@
     ],
     "tags": [
       "Android",
-      "painting",
+      "Painting",
       "Biking",
       "Reading",
-      "Barry's Bootcamp",
-      "Art and Design"
+      "Barry's bootcamp",
+      "Art and design"
     ],
     "team": "Engineering"
   },
@@ -808,7 +808,7 @@
       }
     ],
     "tags": [
-      "Machine Learning",
+      "Machine learning",
       "Yoga"
     ],
     "team": "Engineering"
