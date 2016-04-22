@@ -259,26 +259,28 @@ const render = () => {
     setTimeout(() => {
       collapse();
 
-      if (tag) {
-        filterHeader.innerHTML = `Talk to us about <strong>${tag}</strong>:`;
-      } else {
-        filterHeader.innerHTML = '';
-      }
-
-      isotope.arrange({
-        filter: elem => {
-          if (!tag) {
-            return true;
-          }
-
-          const id = parseInt(elem.getAttribute('data-id'), 10);
-          const person = people[id];
-          const tags = person.tags || [];
-
-          return tags.indexOf(tag) !== -1;
+      setTimeout(() => {
+        if (tag) {
+          filterHeader.innerHTML = `Talk to us about <strong>${tag}</strong>:`;
+        } else {
+          filterHeader.innerHTML = '';
         }
-      });
-    }, 100);
+
+        isotope.arrange({
+          filter: elem => {
+            if (!tag) {
+              return true;
+            }
+
+            const id = parseInt(elem.getAttribute('data-id'), 10);
+            const person = people[id];
+            const tags = person.tags || [];
+
+            return tags.indexOf(tag) !== -1;
+          }
+        });
+      }, 200);
+    }, 50);
   }).forEach(tag => tagsInner.appendChild(tag));
 };
 
