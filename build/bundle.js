@@ -213,7 +213,9 @@
 	  var collapse = function collapse() {
 	    tagsContainer.style.height = '';
 	    header.classList.remove('expanded');
-	    header.classList.add('collapsed');
+	    setTimeout(function () {
+	      header.classList.add('collapsed');
+	    }, 0);
 	  };
 
 	  header.addEventListener('touchstart', expand, false);
