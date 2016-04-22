@@ -3,7 +3,7 @@ const Isotope = require('isotope-layout/dist/isotope.pkgd.js');
 const _ = require('lodash');
 
 require('../css/main.css');
-const people = require('json!./people.json');
+let people = require('json!./people.json');
 
 const COLORS = [
   '#7B0051',
@@ -14,6 +14,27 @@ const COLORS = [
   '#3fb34f',
   '#ffaa91'
 ];
+
+const tagRemapping = {
+  'bicycles': 'Cycling',
+  'bikes': 'Cycling',
+  'bike commuting': 'Cycling',
+  'biking': 'Cycling',
+  'new york city': 'New York',
+  'nyc': 'New York',
+  'college football': 'Football',
+  'new england patriots': 'Football',
+  'boston red sox': 'Baseball',
+  'san francisco giants': 'Baseball',
+  'golden state warriors': 'Basketball',
+  'react': 'JavaScript',
+};
+
+// Clean up tags a bit
+people = people.map(person => {
+  person.tags = person.tags.map(tag => tagRemapping[tag.toLowerCase()] || tag);
+  return person;
+});
 
 const rand = max => Math.floor(max * Math.random());
 
