@@ -171,29 +171,35 @@ const render = () => {
   const tagsInner = document.createElement('div');
   tagsContainer.appendChild(tagsInner);
 
+  let preventCollapse = false;
+
   const expand = () => {
+    if (header.classList.contains('expanded')) {
+      return;
+    }
+
+    header.classList.add('expanding');
     tagsContainer.style.height = tagsInner.offsetHeight + 'px';
-    header.classList.add('expanded');
+    setTimeout(() => {
+      header.classList.remove('collapsed');
+      header.classList.remove('expanding');
+      header.classList.add('expanded');
+    }, 200);
   };
 
   const collapse = () => {
     tagsContainer.style.height = '';
     header.classList.remove('expanded');
+    header.classList.add('collapsed');
   };
 
   header.addEventListener('touchstart', expand, false);
   header.addEventListener('mouseenter', expand, false);
-  header.addEventListener('touchstart', expand, false);
   header.addEventListener('mouseleave', collapse, false);
-  // XXX: I did not test this at all.
-  tagsContainer.addEventListener('touchend', (event) => {
-    const target = event.target;
-    if (target.classList.contains('tag')) {
-      collapse();
-    }
-  }, false);
 
   getTagElements(getAllTags(people), (tag) => {
+    collapse();
+
     if (tag) {
       filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
     } else {

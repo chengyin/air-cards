@@ -27,7 +27,22 @@ h1 {
   height: 100px;
   margin: 0 -4px;
   overflow: hidden;
+}
+
+.collapsed #tags {
   transition: 200ms ease height;
+}
+
+/* Prevent the tags from being clickable while expanding */
+.expanding #tags::after {
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .tag {
