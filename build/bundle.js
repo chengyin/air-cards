@@ -121,7 +121,15 @@
 	  'golden state warriors': 'Basketball',
 	  'react': 'JavaScript',
 	  'sushi': 'Asian Food',
-	  'parenting': 'Being a Parent'
+	  'parenting': 'Being a Parent',
+	  'french language': 'French',
+	  'the south': 'Southern hospitality',
+	  'raising sons': 'Being a Parent',
+	  'raising daughters': 'Being a Parent',
+	  'being middle child': 'Being a middle child',
+	  'Good reads': 'Books',
+	  'books': 'Books',
+	  'korean food': 'Asian Food'
 	};
 
 	// Clean up tags a bit
@@ -27464,7 +27472,7 @@
 				},
 				{
 					"label": "Hawk Hill Avg Time",
-					"value": "9h 44m"
+					"value": "9m 44s"
 				}
 			],
 			"tags": [
@@ -27984,16 +27992,16 @@
 			"role": "Software Engineer",
 			"stats": [
 				{
-					"label": "",
-					"value": ""
+					"label": "Cities lived for more than 1 yrs",
+					"value": "6"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Magic number for me",
+					"value": "11"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Spicy tolerance",
+					"value": "5/5"
 				}
 			],
 			"tags": [],
