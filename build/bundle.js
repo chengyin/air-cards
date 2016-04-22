@@ -27612,7 +27612,7 @@
 					"value": "315lbs"
 				},
 				{
-					"label": "Last.fm Play Count / Scrobbles",
+					"label": "Last.fm Scrobbles",
 					"value": "210k"
 				},
 				{
@@ -27625,7 +27625,10 @@
 				"React",
 				"iOS",
 				"CrossFit",
-				"Sailing"
+				"Sailing",
+				"Vinyl",
+				"Travel",
+				"Sports"
 			],
 			"team": "Engineering"
 		},
