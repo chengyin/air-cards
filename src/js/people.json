@@ -186,19 +186,19 @@
     "firstName": "Crystal",
     "lastName": "Hou",
     "profile": "https://one.airbnb.com/people/crystal_hou",
-    "role": "Software Engineer",
+    "role": "Communication Manager, Greater China",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Dog",
+        "value": "1"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Cities visited for NYE",
+        "value": "8"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Times Swum",
+        "value": "0"
       }
     ],
     "tags": [],

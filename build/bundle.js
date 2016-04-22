@@ -27482,19 +27482,19 @@
 			"firstName": "Crystal",
 			"lastName": "Hou",
 			"profile": "https://one.airbnb.com/people/crystal_hou",
-			"role": "Software Engineer",
+			"role": "Communication Manager, Greater China",
 			"stats": [
 				{
-					"label": "",
-					"value": ""
+					"label": "Dog",
+					"value": "1"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Cities visited for NYE",
+					"value": "8"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Times Swum",
+					"value": "0"
 				}
 			],
 			"tags": [],
@@ -27925,10 +27925,10 @@
 			"firstName": "Nicholas",
 			"lastName": "Roth",
 			"profile": "https://one.airbnb.com/people/nicholas_roth",
-			"role": "Manager, Strategic Development",
+			"role": "Strategic Development",
 			"stats": [
 				{
-					"label": "Mid School Rock Band",
+					"label": "Mid School Rock Albums",
 					"value": "1"
 				},
 				{
@@ -27936,7 +27936,7 @@
 					"value": "15"
 				},
 				{
-					"label": "Times cooked in the past 4yrs",
+					"label": "Meals Cooked Since Graduation",
 					"value": "2"
 				}
 			],
