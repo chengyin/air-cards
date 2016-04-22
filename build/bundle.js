@@ -27371,7 +27371,14 @@
 					"value": "8"
 				}
 			],
-			"tags": [],
+			"tags": [
+				"Mathematics",
+				"Piano",
+				"Wine",
+				"books",
+				"korean food",
+				"journalism"
+			],
 			"team": "Communications"
 		},
 		{
