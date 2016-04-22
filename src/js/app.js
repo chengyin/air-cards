@@ -81,6 +81,7 @@ const tagRemapping = {
   'being middle child': 'Being a middle child',
   'Good reads': 'Books',
   'books': 'Books',
+  'korean food': 'Asian Food',
 };
 
 // Clean up tags a bit
