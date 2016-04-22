@@ -3,7 +3,7 @@ const Isotope = require('isotope-layout/dist/isotope.pkgd.js');
 const _ = require('lodash');
 
 require('../css/main.css');
-const people = require('json!./people.json');
+let people = require('json!./people.json');
 
 const COLORS = [
   '#7B0051',
@@ -14,6 +14,27 @@ const COLORS = [
   '#3fb34f',
   '#ffaa91'
 ];
+
+const tagRemapping = {
+  'bicycles': 'Cycling',
+  'bikes': 'Cycling',
+  'bike commuting': 'Cycling',
+  'biking': 'Cycling',
+  'new york city': 'New York',
+  'nyc': 'New York',
+  'college football': 'Football',
+  'new england patriots': 'Football',
+  'boston red sox': 'Baseball',
+  'san francisco giants': 'Baseball',
+  'golden state warriors': 'Basketball',
+  'react': 'JavaScript',
+};
+
+// Clean up tags a bit
+people = people.map(person => {
+  person.tags = person.tags.map(tag => tagRemapping[tag.toLowerCase()] || tag);
+  return person;
+});
 
 const rand = max => Math.floor(max * Math.random());
 
@@ -93,27 +114,8 @@ const getCardElement = (person, id) => {
     <div class="air-card__name">
       ${person.firstName} ${person.lastName}
     </div>
+    <div class="air-card__role">${person.team} / ${person.role}</div>
     <div class="air-card__info">
-      <div class="air-card__info__label">
-        Team
-      </div>
-      <div class="air-card__info__value">
-        ${person.team}
-      </div>
-    </div>
-    <div class="air-card__info">
-      <div class="air-card__info__label">
-        Role
-      </div>
-      <div class="air-card__info__value">
-        ${person.role}
-      </div>
-    </div>
-    <div class="air-card__hr"></div>
-    <div class="air-card__info">
-      <div class="air-card__info__label">
-        Stats
-      </div>
       <div class="air-card__info__value">
         <table class="air-card__stats">
           <tbody>
@@ -123,14 +125,6 @@ const getCardElement = (person, id) => {
           </tbody>
         </table>
       </div>
-    </div>
-    <div class="air-card__footer">
-      <a href="mailto:${person.email}">
-        <i class="icon icon-white icon-envelope"></i>
-      </a>
-      <a href="${person.profile}">
-        <i class="icon icon-white icon-birdhouse"></i>
-      </a>
     </div>
   </div>
 </div>
@@ -171,29 +165,35 @@ const render = () => {
   const tagsInner = document.createElement('div');
   tagsContainer.appendChild(tagsInner);
 
+  let preventCollapse = false;
+
   const expand = () => {
+    if (header.classList.contains('expanded')) {
+      return;
+    }
+
+    header.classList.add('expanding');
     tagsContainer.style.height = tagsInner.offsetHeight + 'px';
-    header.classList.add('expanded');
+    setTimeout(() => {
+      header.classList.remove('collapsed');
+      header.classList.remove('expanding');
+      header.classList.add('expanded');
+    }, 200);
   };
 
   const collapse = () => {
     tagsContainer.style.height = '';
     header.classList.remove('expanded');
+    header.classList.add('collapsed');
   };
 
   header.addEventListener('touchstart', expand, false);
   header.addEventListener('mouseenter', expand, false);
-  header.addEventListener('touchstart', expand, false);
   header.addEventListener('mouseleave', collapse, false);
-  // XXX: I did not test this at all.
-  tagsContainer.addEventListener('touchend', (event) => {
-    const target = event.target;
-    if (target.classList.contains('tag')) {
-      collapse();
-    }
-  }, false);
 
   getTagElements(getAllTags(people), (tag) => {
+    collapse();
+
     if (tag) {
       filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
     } else {

@@ -22,9 +22,9 @@
       }
     ],
     "tags": [
-      "#socks",
-      "#dance",
-      "#oldersisters"
+      "Socks",
+      "Dance",
+      "Oldersisters"
     ],
     "team": "Talent Partners"
   },
@@ -101,14 +101,14 @@
       }
     ],
     "tags": [
-      "gardening",
-      "bicycles",
+      "Gardening",
+      "Bicycles",
       "Experience Design",
       "Guitar",
-      "#Canada",
+      "Canada",
       "Design",
       "Video Editing",
-      "sci-fi",
+      "Sci-fi",
       "Photography"
     ],
     "team": "Design"
@@ -167,15 +167,15 @@
     "tags": [
       "Gluten Free",
       "Cycling",
-      "good reads",
+      "Good reads",
       "AirMax90s",
       "Skiing",
-      "bangs",
+      "Bangs",
       "Community Volunteer",
       "Catan",
-      "puzzles",
+      "Puzzles",
       "New England Patriots",
-      "national parks"
+      "National parks"
     ],
     "team": "VR North America"
   },
@@ -202,7 +202,7 @@
       }
     ],
     "tags": [],
-    "team": "Mysteries"
+    "team": "Communications"
   },
   {
     "animal": "Platypus",
@@ -262,13 +262,13 @@
     ],
     "tags": [
       "Call centers",
-      "craft beer",
-      "meditation",
+      "Craft beer",
+      "Meditation",
       "College Football",
       "Customer Care",
       "Guitar",
-      "southern hospitality",
-      "golf",
+      "Southern hospitality",
+      "Golf",
       "Being a middle child",
       "Hawaii",
       "CX",
@@ -327,9 +327,9 @@
     "tags": [
       "JavaScript",
       "React",
-      "iOS Development",
+      "iOS",
       "CrossFit",
-      "sailing"
+      "Sailing"
     ],
     "team": "Engineering"
   },
@@ -359,7 +359,7 @@
       "Raising Sons",
       "Raising Daughters",
       "Squash",
-      "woodworking",
+      "Woodworking",
       "Home Improvement"
     ],
     "team": "Engineering"
@@ -391,7 +391,7 @@
       "Politics",
       "Classic Literature",
       "Travel",
-      "poetry"
+      "Poetry"
     ],
     "team": "Engineering"
   },
@@ -426,7 +426,7 @@
       "Java",
       "San Francisco Giants",
       "Toronto",
-      "#Canada"
+      "Canada"
     ],
     "team": "Engineering"
   },
@@ -518,7 +518,7 @@
       "C",
       "Mandarin Chinese",
       "Being Tall",
-      "robots"
+      "Robots"
     ],
     "team": "Engineering"
   },
@@ -545,7 +545,7 @@
       }
     ],
     "tags": [
-      "woodworking",
+      "Woodworking",
       "Boston",
       "Coffee",
       "Boston Red Sox",
@@ -606,14 +606,14 @@
       }
     ],
     "tags": [
-      "#python",
-      "#salsa",
-      "#cyborgism",
-      "#proust",
-      "#bikes",
-      "#leadingtoursinacityyoudontknow",
-      "#Berlin",
-      "#teaching"
+      "Python",
+      "Salsa",
+      "Cyborgism",
+      "Proust",
+      "Bikes",
+      "Leadingtoursinacityyoudontknow",
+      "Berlin",
+      "Teaching"
     ],
     "team": "Data Engineering"
   },
@@ -641,23 +641,23 @@
     ],
     "tags": [
       "New York",
-      "accosting dogs",
+      "Accosting dogs",
       "NYC",
       "Iceland",
-      "#coffee",
+      "Coffee",
       "Guitar",
-      "bicycles",
-      "english bulldogs",
+      "Bicycles",
+      "English bulldogs",
       "New England",
-      "harry potter",
+      "Harry potter",
       "New York City",
       "Inbox Zero",
       "French",
-      "tea",
+      "Tea",
       "Bike Commuting",
       "Squash",
       "Economics",
-      "rubiks cubes",
+      "Rubiks cubes",
       "GTD",
       "Game of Thrones",
       "French language"
@@ -712,15 +712,15 @@
       }
     ],
     "tags": [
-      "poetry",
+      "Poetry",
       "CrossFit",
-      "boxing",
+      "Boxing",
       "Poker",
       "Ruby",
       "React",
       "Paleo",
-      "effective altruism",
-      "meditation"
+      "Effective altruism",
+      "Meditation"
     ],
     "team": "Engineering"
   },
@@ -777,7 +777,7 @@
     ],
     "tags": [
       "Android",
-      "painting",
+      "Painting",
       "Biking",
       "Reading",
       "Barry's Bootcamp",
