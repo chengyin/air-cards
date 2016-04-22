@@ -255,11 +255,12 @@ const render = () => {
   header.addEventListener('mouseleave', collapse, false);
 
   getTagElements(getAllTags(people), (tag) => {
-    const filter = () => {
+    document.body.scrollTop = 0;
+    setTimeout(() => {
       collapse();
 
       if (tag) {
-        filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
+        filterHeader.innerHTML = `Talk to us about <strong>${tag}</strong>:`;
       } else {
         filterHeader.innerHTML = '';
       }
@@ -277,14 +278,7 @@ const render = () => {
           return tags.indexOf(tag) !== -1;
         }
       });
-    };
-
-    if (document.body.scrollTop > tagsContainer.offsetTop) {
-      document.body.scrollTop = tagsContainer.offsetTop;
-      setTimeout(filter, 100);
-    } else {
-      filter();
-    }
+    }, 100);
   }).forEach(tag => tagsInner.appendChild(tag));
 };
 
