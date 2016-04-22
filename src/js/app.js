@@ -28,6 +28,7 @@ const tagRemapping = {
   'san francisco giants': 'Baseball',
   'golden state warriors': 'Basketball',
   'react': 'JavaScript',
+  'sushi': 'Asian Food',
 };
 
 // Clean up tags a bit
