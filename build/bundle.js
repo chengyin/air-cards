@@ -60,9 +60,52 @@
 	var _ = __webpack_require__(6);
 
 	__webpack_require__(8);
-	var people = __webpack_require__(31);
+	var people = _.shuffle(__webpack_require__(31));
 
 	var COLORS = ['#7B0051', '#00d1c1', '#ffb400', '#007a87', '#ff5a5f', '#3fb34f', '#ffaa91'];
+
+	var TEAMS = {
+	  'Talent Partners': {
+	    icon: 'icon-group-alt',
+	    color: '#7B0051'
+	  },
+	  'Engineering': {
+	    icon: 'icon-code',
+	    color: '#00d1c1'
+	  },
+	  'Communications': {
+	    icon: 'icon-intercom',
+	    color: '#ffb400'
+	  },
+	  'Design': {
+	    icon: 'icon-edit',
+	    color: '#007a87'
+	  },
+	  'VR North America': {
+	    icon: 'icon-castle',
+	    color: ''
+	  },
+	  'Mysteries': {
+	    icon: 'icon-question-alt',
+	    color: '#ff5a5f'
+	  },
+	  'ITX': {
+	    icon: 'icon-laptop',
+	    color: '#ff5a5f'
+	  },
+	  'Public Policy - Justice': {
+	    icon: 'icon-description-alt',
+	    color: '#3fb34f'
+	  },
+	  'Data Engineering': {
+	    icon: 'icon-stats',
+	    color: '#007a87'
+	  },
+	  'FP&A': {
+	    icon: 'icon-currency-usd',
+	    color: '#ffaa91'
+	  }
+	};
 
 	var tagRemapping = {
 	  'bicycles': 'Cycling',
@@ -146,7 +189,15 @@
 
 	var getCardElement = function getCardElement(person, id) {
 	  var div = document.createElement('div');
-	  var color = COLORS[rand(COLORS.length)];
+	  // const color = COLORS[rand(COLORS.length)];
+
+	  var team = person.team;
+	  var role = person.role;
+
+	  var color = TEAMS[team].color;
+	  var teamIcon = TEAMS[team].icon;
+
+	  var titleLine = team + ' / ' + role;
 
 	  div.className = 'grid-item';
 	  div.setAttribute('data-id', id);
@@ -154,7 +205,7 @@
 	  var stats = person.stats || [];
 	  var imageURL = 'src/img/' + person.firstName.toLowerCase() + '_' + person.lastName.toLowerCase() + '.jpg';
 
-	  div.innerHTML = '\n<div class="air-card-container">\n  <div class="air-card" style="background-color: ' + color + '; border-color: ' + color + ';">\n    <div class="air-card__image">\n      <a href="' + person.profile + '">\n        <div class="image" style="background-image:url(' + imageURL + ')"></div>\n      </a>\n    </div>\n    <div class="air-card__name">\n      ' + person.firstName + ' ' + person.lastName + '\n    </div>\n    <div class="air-card__role">' + person.team + ' / ' + person.role + '</div>\n    <div class="air-card__info">\n      <div class="air-card__info__value">\n        <table class="air-card__stats">\n          <tbody>\n            ' + getStatHTML(stats[0]) + '\n            ' + getStatHTML(stats[1]) + '\n            ' + getStatHTML(stats[2]) + '\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n';
+	  div.innerHTML = '\n<div class="air-card-container">\n  <div class="air-card" style="background-color: ' + color + '; border-color: ' + color + ';">\n    <div class="air-card__image">\n      <a href="' + person.profile + '" target="_blank">\n        <div class="image" style="background-image:url(' + imageURL + ')"></div>\n      </a>\n    </div>\n    <div class="air-card__name">\n      ' + person.firstName + ' ' + person.lastName + '\n      <div class="air-card__icons">\n        <i title="' + titleLine + '" class="icon ' + teamIcon + '"></i>\n      </div>\n    </div>\n    <div class="air-card__role">\n      ' + titleLine + '\n    </div>\n    <div class="air-card__info">\n      <div class="air-card__info__value">\n        <table class="air-card__stats">\n          <tbody>\n            ' + getStatHTML(stats[0]) + '\n            ' + getStatHTML(stats[1]) + '\n            ' + getStatHTML(stats[2]) + '\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n';
 
 	  return div;
 	};

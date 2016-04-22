@@ -5282,6 +5282,14 @@ h1 {
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
+  position: relative;
+}
+
+.air-card__name .air-card__icons {
+  font-size: 24px;
+  position: absolute;
+  top: -6px;
+  right: 0;
 }
 
 .air-card__hr {
@@ -5316,7 +5324,6 @@ h1 {
 }
 
 .air-card__footer .icon {
-  font-size: 20px;
   margin-left: 4px;
   padding: 2px 4px;
 }
