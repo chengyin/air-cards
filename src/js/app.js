@@ -28,6 +28,7 @@ const tagRemapping = {
   'san francisco giants': 'Baseball',
   'golden state warriors': 'Basketball',
   'react': 'JavaScript',
+  'sushi': 'Asian Food',
 };
 
 // Clean up tags a bit
@@ -184,7 +185,9 @@ const render = () => {
   const collapse = () => {
     tagsContainer.style.height = '';
     header.classList.remove('expanded');
-    header.classList.add('collapsed');
+    setTimeout(() => {
+      header.classList.add('collapsed');
+    }, 0);
   };
 
   header.addEventListener('touchstart', expand, false);
@@ -192,27 +195,36 @@ const render = () => {
   header.addEventListener('mouseleave', collapse, false);
 
   getTagElements(getAllTags(people), (tag) => {
-    collapse();
+    const filter = () => {
+      collapse();
 
-    if (tag) {
-      filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
-    } else {
-      filterHeader.innerHTML = '';
-    }
-
-    isotope.arrange({
-      filter: elem => {
-        if (!tag) {
-          return true;
-        }
-
-        const id = parseInt(elem.getAttribute('data-id'), 10);
-        const person = people[id];
-        const tags = person.tags || [];
-
-        return tags.indexOf(tag) !== -1;
+      if (tag) {
+        filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
+      } else {
+        filterHeader.innerHTML = '';
       }
-    });
+
+      isotope.arrange({
+        filter: elem => {
+          if (!tag) {
+            return true;
+          }
+
+          const id = parseInt(elem.getAttribute('data-id'), 10);
+          const person = people[id];
+          const tags = person.tags || [];
+
+          return tags.indexOf(tag) !== -1;
+        }
+      });
+    };
+
+    if (document.body.scrollTop > tagsContainer.offsetTop) {
+      document.body.scrollTop = tagsContainer.offsetTop;
+      setTimeout(filter, 100);
+    } else {
+      filter();
+    }
   }).forEach(tag => tagsInner.appendChild(tag));
 
 
