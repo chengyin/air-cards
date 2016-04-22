@@ -64,6 +64,29 @@
 
 	var COLORS = ['#7B0051', '#00d1c1', '#ffb400', '#007a87', '#ff5a5f', '#3fb34f', '#ffaa91'];
 
+	var tagRemapping = {
+	  'bicycles': 'Cycling',
+	  'bikes': 'Cycling',
+	  'bike commuting': 'Cycling',
+	  'biking': 'Cycling',
+	  'new york city': 'New York',
+	  'nyc': 'New York',
+	  'college football': 'Football',
+	  'new england patriots': 'Football',
+	  'boston red sox': 'Baseball',
+	  'san francisco giants': 'Baseball',
+	  'golden state warriors': 'Basketball',
+	  'react': 'JavaScript'
+	};
+
+	// Clean up tags a bit
+	people = people.map(function (person) {
+	  person.tags = person.tags.map(function (tag) {
+	    return tagRemapping[tag.toLowerCase()] || tag;
+	  });
+	  return person;
+	});
+
 	var rand = function rand(max) {
 	  return Math.floor(max * Math.random());
 	};
@@ -130,7 +153,7 @@
 	  var stats = person.stats || [];
 	  var imageURL = 'src/img/' + person.firstName.toLowerCase() + '_' + person.lastName.toLowerCase() + '.jpg';
 
-	  div.innerHTML = '\n<div class="air-card-container">\n  <div class="air-card" style="background-color: ' + color + '; border-color: ' + color + ';">\n    <div class="air-card__image">\n      <a href="' + person.profile + '">\n        <div class="image" style="background-image:url(' + imageURL + ')"></div>\n      </a>\n    </div>\n    <div class="air-card__name">\n      ' + person.firstName + ' ' + person.lastName + '\n    </div>\n    <div class="air-card__info">\n      <div class="air-card__info__label">\n        Team\n      </div>\n      <div class="air-card__info__value">\n        ' + person.team + '\n      </div>\n    </div>\n    <div class="air-card__info">\n      <div class="air-card__info__label">\n        Role\n      </div>\n      <div class="air-card__info__value">\n        ' + person.role + '\n      </div>\n    </div>\n    <div class="air-card__hr"></div>\n    <div class="air-card__info">\n      <div class="air-card__info__label">\n        Stats\n      </div>\n      <div class="air-card__info__value">\n        <table class="air-card__stats">\n          <tbody>\n            ' + getStatHTML(stats[0]) + '\n            ' + getStatHTML(stats[1]) + '\n            ' + getStatHTML(stats[2]) + '\n          </tbody>\n        </table>\n      </div>\n    </div>\n    <div class="air-card__footer">\n      <a href="mailto:' + person.email + '">\n        <i class="icon icon-white icon-envelope"></i>\n      </a>\n      <a href="' + person.profile + '">\n        <i class="icon icon-white icon-birdhouse"></i>\n      </a>\n    </div>\n  </div>\n</div>\n';
+	  div.innerHTML = '\n<div class="air-card-container">\n  <div class="air-card" style="background-color: ' + color + '; border-color: ' + color + ';">\n    <div class="air-card__image">\n      <a href="' + person.profile + '">\n        <div class="image" style="background-image:url(' + imageURL + ')"></div>\n      </a>\n    </div>\n    <div class="air-card__name">\n      ' + person.firstName + ' ' + person.lastName + '\n    </div>\n    <div class="air-card__role">' + person.team + ' / ' + person.role + '</div>\n    <div class="air-card__info">\n      <div class="air-card__info__value">\n        <table class="air-card__stats">\n          <tbody>\n            ' + getStatHTML(stats[0]) + '\n            ' + getStatHTML(stats[1]) + '\n            ' + getStatHTML(stats[2]) + '\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n';
 
 	  return div;
 	};
@@ -171,29 +194,35 @@
 	  var tagsInner = document.createElement('div');
 	  tagsContainer.appendChild(tagsInner);
 
+	  var preventCollapse = false;
+
 	  var expand = function expand() {
+	    if (header.classList.contains('expanded')) {
+	      return;
+	    }
+
+	    header.classList.add('expanding');
 	    tagsContainer.style.height = tagsInner.offsetHeight + 'px';
-	    header.classList.add('expanded');
+	    setTimeout(function () {
+	      header.classList.remove('collapsed');
+	      header.classList.remove('expanding');
+	      header.classList.add('expanded');
+	    }, 200);
 	  };
 
 	  var collapse = function collapse() {
 	    tagsContainer.style.height = '';
 	    header.classList.remove('expanded');
+	    header.classList.add('collapsed');
 	  };
 
 	  header.addEventListener('touchstart', expand, false);
 	  header.addEventListener('mouseenter', expand, false);
-	  header.addEventListener('touchstart', expand, false);
 	  header.addEventListener('mouseleave', collapse, false);
-	  // XXX: I did not test this at all.
-	  tagsContainer.addEventListener('touchend', function (event) {
-	    var target = event.target;
-	    if (target.classList.contains('tag')) {
-	      collapse();
-	    }
-	  }, false);
 
 	  getTagElements(getAllTags(people), function (tag) {
+	    collapse();
+
 	    if (tag) {
 	      filterHeader.innerHTML = 'Ask us about <strong>' + tag + '</strong>';
 	    } else {
@@ -27229,9 +27258,9 @@
 				}
 			],
 			"tags": [
-				"#socks",
-				"#dance",
-				"#oldersisters"
+				"Socks",
+				"Dance",
+				"Oldersisters"
 			],
 			"team": "Talent Partners"
 		},
@@ -27308,14 +27337,14 @@
 				}
 			],
 			"tags": [
-				"gardening",
-				"bicycles",
+				"Gardening",
+				"Bicycles",
 				"Experience Design",
 				"Guitar",
-				"#Canada",
+				"Canada",
 				"Design",
 				"Video Editing",
-				"sci-fi",
+				"Sci-fi",
 				"Photography"
 			],
 			"team": "Design"
@@ -27374,15 +27403,15 @@
 			"tags": [
 				"Gluten Free",
 				"Cycling",
-				"good reads",
+				"Good reads",
 				"AirMax90s",
 				"Skiing",
-				"bangs",
+				"Bangs",
 				"Community Volunteer",
 				"Catan",
-				"puzzles",
+				"Puzzles",
 				"New England Patriots",
-				"national parks"
+				"National parks"
 			],
 			"team": "VR North America"
 		},
@@ -27409,7 +27438,7 @@
 				}
 			],
 			"tags": [],
-			"team": "Mysteries"
+			"team": "Communications"
 		},
 		{
 			"animal": "Platypus",
@@ -27469,13 +27498,13 @@
 			],
 			"tags": [
 				"Call centers",
-				"craft beer",
-				"meditation",
+				"Craft beer",
+				"Meditation",
 				"College Football",
 				"Customer Care",
 				"Guitar",
-				"southern hospitality",
-				"golf",
+				"Southern hospitality",
+				"Golf",
 				"Being a middle child",
 				"Hawaii",
 				"CX",
@@ -27534,9 +27563,9 @@
 			"tags": [
 				"JavaScript",
 				"React",
-				"iOS Development",
+				"iOS",
 				"CrossFit",
-				"sailing"
+				"Sailing"
 			],
 			"team": "Engineering"
 		},
@@ -27566,7 +27595,7 @@
 				"Raising Sons",
 				"Raising Daughters",
 				"Squash",
-				"woodworking",
+				"Woodworking",
 				"Home Improvement"
 			],
 			"team": "Engineering"
@@ -27598,7 +27627,7 @@
 				"Politics",
 				"Classic Literature",
 				"Travel",
-				"poetry"
+				"Poetry"
 			],
 			"team": "Engineering"
 		},
@@ -27633,7 +27662,7 @@
 				"Java",
 				"San Francisco Giants",
 				"Toronto",
-				"#Canada"
+				"Canada"
 			],
 			"team": "Engineering"
 		},
@@ -27725,7 +27754,7 @@
 				"C",
 				"Mandarin Chinese",
 				"Being Tall",
-				"robots"
+				"Robots"
 			],
 			"team": "Engineering"
 		},
@@ -27752,7 +27781,7 @@
 				}
 			],
 			"tags": [
-				"woodworking",
+				"Woodworking",
 				"Boston",
 				"Coffee",
 				"Boston Red Sox",
@@ -27813,14 +27842,14 @@
 				}
 			],
 			"tags": [
-				"#python",
-				"#salsa",
-				"#cyborgism",
-				"#proust",
-				"#bikes",
-				"#leadingtoursinacityyoudontknow",
-				"#Berlin",
-				"#teaching"
+				"Python",
+				"Salsa",
+				"Cyborgism",
+				"Proust",
+				"Bikes",
+				"Leadingtoursinacityyoudontknow",
+				"Berlin",
+				"Teaching"
 			],
 			"team": "Data Engineering"
 		},
@@ -27848,23 +27877,23 @@
 			],
 			"tags": [
 				"New York",
-				"accosting dogs",
+				"Accosting dogs",
 				"NYC",
 				"Iceland",
-				"#coffee",
+				"Coffee",
 				"Guitar",
-				"bicycles",
-				"english bulldogs",
+				"Bicycles",
+				"English bulldogs",
 				"New England",
-				"harry potter",
+				"Harry potter",
 				"New York City",
 				"Inbox Zero",
 				"French",
-				"tea",
+				"Tea",
 				"Bike Commuting",
 				"Squash",
 				"Economics",
-				"rubiks cubes",
+				"Rubiks cubes",
 				"GTD",
 				"Game of Thrones",
 				"French language"
@@ -27919,15 +27948,15 @@
 				}
 			],
 			"tags": [
-				"poetry",
+				"Poetry",
 				"CrossFit",
-				"boxing",
+				"Boxing",
 				"Poker",
 				"Ruby",
 				"React",
 				"Paleo",
-				"effective altruism",
-				"meditation"
+				"Effective altruism",
+				"Meditation"
 			],
 			"team": "Engineering"
 		},
@@ -27984,7 +28013,7 @@
 			],
 			"tags": [
 				"Android",
-				"painting",
+				"Painting",
 				"Biking",
 				"Reading",
 				"Barry's Bootcamp",
