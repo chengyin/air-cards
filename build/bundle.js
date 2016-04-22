@@ -27510,7 +27510,7 @@
 			"role": "Engineering Manager",
 			"stats": [
 				{
-					"label": "Gray hair before kids",
+					"label": "Gray hairs before kids",
 					"value": "0"
 				},
 				{
@@ -27719,6 +27719,8 @@
 				}
 			],
 			"tags": [
+				"being middle child",
+				"raising sons",
 				"Baseball",
 				"Basketball",
 				"Being a Parent",
