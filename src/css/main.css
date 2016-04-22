@@ -282,3 +282,7 @@ h1 {
 .expanded .header-more {
   visibility: hidden;
 }
+
+#filter-header {
+  margin: 0 10px 10px;
+}
