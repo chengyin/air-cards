@@ -192,27 +192,36 @@ const render = () => {
   header.addEventListener('mouseleave', collapse, false);
 
   getTagElements(getAllTags(people), (tag) => {
-    collapse();
+    const filter = () => {
+      collapse();
 
-    if (tag) {
-      filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
-    } else {
-      filterHeader.innerHTML = '';
-    }
-
-    isotope.arrange({
-      filter: elem => {
-        if (!tag) {
-          return true;
-        }
-
-        const id = parseInt(elem.getAttribute('data-id'), 10);
-        const person = people[id];
-        const tags = person.tags || [];
-
-        return tags.indexOf(tag) !== -1;
+      if (tag) {
+        filterHeader.innerHTML = `Ask us about <strong>${tag}</strong>`;
+      } else {
+        filterHeader.innerHTML = '';
       }
-    });
+
+      isotope.arrange({
+        filter: elem => {
+          if (!tag) {
+            return true;
+          }
+
+          const id = parseInt(elem.getAttribute('data-id'), 10);
+          const person = people[id];
+          const tags = person.tags || [];
+
+          return tags.indexOf(tag) !== -1;
+        }
+      });
+    };
+
+    if (document.body.scrollTop > tagsContainer.offsetTop) {
+      document.body.scrollTop = tagsContainer.offsetTop;
+      setTimeout(filter, 100);
+    } else {
+      filter();
+    }
   }).forEach(tag => tagsInner.appendChild(tag));
 
 
