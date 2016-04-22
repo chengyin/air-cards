@@ -704,17 +704,17 @@
     "role": "Software Engineer",
     "stats": [
       {
-        "label": "Years Drinking only water",
+        "label": "Power level",
+        "value": "-2147483647"
+      },
+      {
+        "label": "Years drinking nothing but water",
         "value": "4"
       },
       {
-        "label": "Aunts",
-        "value": "11"
+        "label": "Thinks in binary",
+        "value": "1"
       },
-      {
-        "label": "Crazy Aunts",
-        "value": "9"
-      }
     ],
     "tags": [
       "Poetry",
