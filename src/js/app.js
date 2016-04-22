@@ -107,7 +107,7 @@ const getCardElement = (person, id) => {
 <div class="air-card-container">
   <div class="air-card" style="background-color: ${color}; border-color: ${color};">
     <div class="air-card__image">
-      <a href="${person.profile}">
+      <a href="${person.profile}" target="_blank">
         <div class="image" style="background-image:url(${imageURL})"></div>
       </a>
     </div>
