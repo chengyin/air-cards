@@ -74,6 +74,14 @@ const tagRemapping = {
   'react': 'JavaScript',
   'sushi': 'Asian Food',
   'parenting': 'Being a Parent',
+  'french language': 'French',
+  'the south': 'Southern hospitality',
+  'raising sons': 'Being a Parent',
+  'raising daughters': 'Being a Parent',
+  'being middle child': 'Being a middle child',
+  'Good reads': 'Books',
+  'books': 'Books',
+  'korean food': 'Asian Food',
 };
 
 // Clean up tags a bit
