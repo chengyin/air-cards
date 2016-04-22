@@ -103,11 +103,11 @@
     "tags": [
       "Gardening",
       "Bicycles",
-      "Experience design",
+      "Experience Design",
       "Guitar",
       "Canada",
       "Design",
-      "Video editing",
+      "Video Editing",
       "Sci-fi",
       "Photography"
     ],
@@ -138,7 +138,7 @@
     "tags": [
       "Basketball",
       "Scala",
-      "Ping pong"
+      "Ping Pong"
     ],
     "team": "Engineering"
   },
@@ -165,16 +165,16 @@
       }
     ],
     "tags": [
-      "Gluten free",
+      "Gluten Free",
       "Cycling",
       "Good reads",
-      "Airmax90s",
+      "AirMax90s",
       "Skiing",
       "Bangs",
-      "Community volunteer",
+      "Community Volunteer",
       "Catan",
       "Puzzles",
-      "New england patriots",
+      "New England Patriots",
       "National parks"
     ],
     "team": "VR North America"
@@ -227,9 +227,9 @@
       }
     ],
     "tags": [
-      "Crossfit",
+      "CrossFit",
       "Snowboarding",
-      "Water skiing",
+      "Water Skiing",
       "Parenting",
       "Acting",
       "Food",
@@ -264,16 +264,16 @@
       "Call centers",
       "Craft beer",
       "Meditation",
-      "College football",
-      "Customer care",
+      "College Football",
+      "Customer Care",
       "Guitar",
       "Southern hospitality",
       "Golf",
       "Being a middle child",
       "Hawaii",
-      "Cx",
-      "The south",
-      "Ivr"
+      "CX",
+      "The South",
+      "IVR"
     ],
     "team": "ITX"
   },
@@ -325,10 +325,10 @@
       }
     ],
     "tags": [
-      "Javascript",
+      "JavaScript",
       "React",
-      "Ios development",
-      "Crossfit",
+      "iOS",
+      "CrossFit",
       "Sailing"
     ],
     "team": "Engineering"
@@ -356,11 +356,11 @@
       }
     ],
     "tags": [
-      "Raising sons",
-      "Raising daughters",
+      "Raising Sons",
+      "Raising Daughters",
       "Squash",
       "Woodworking",
-      "Home improvement"
+      "Home Improvement"
     ],
     "team": "Engineering"
   },
@@ -389,7 +389,7 @@
     "tags": [
       "Science",
       "Politics",
-      "Classic literature",
+      "Classic Literature",
       "Travel",
       "Poetry"
     ],
@@ -420,11 +420,11 @@
     "tags": [
       "Baseball",
       "Basketball",
-      "Being a parent",
-      "Golden state warriors",
+      "Being a Parent",
+      "Golden State Warriors",
       "Hockey",
       "Java",
-      "San francisco giants",
+      "San Francisco Giants",
       "Toronto",
       "Canada"
     ],
@@ -453,14 +453,14 @@
       }
     ],
     "tags": [
-      "Ios",
+      "iOS",
       "Sushi",
-      "Css",
-      "Diy",
+      "CSS",
+      "DIY",
       "Snowboarding",
       "React",
-      "Javascript",
-      "Bubble tea"
+      "JavaScript",
+      "Bubble Tea"
     ],
     "team": "Engineering"
   },
@@ -516,8 +516,8 @@
       "Mathematics",
       "Science",
       "C",
-      "Mandarin chinese",
-      "Being tall",
+      "Mandarin Chinese",
+      "Being Tall",
       "Robots"
     ],
     "team": "Engineering"
@@ -548,10 +548,10 @@
       "Woodworking",
       "Boston",
       "Coffee",
-      "Boston red sox",
+      "Boston Red Sox",
       "Photography",
       "Politics",
-      "David bowie"
+      "David Bowie"
     ],
     "team": "Public Policy - Justice"
   },
@@ -640,26 +640,26 @@
       }
     ],
     "tags": [
-      "New york",
+      "New York",
       "Accosting dogs",
-      "Nyc",
+      "NYC",
       "Iceland",
       "Coffee",
       "Guitar",
       "Bicycles",
       "English bulldogs",
-      "New england",
+      "New England",
       "Harry potter",
-      "New york city",
-      "Inbox zero",
+      "New York City",
+      "Inbox Zero",
       "French",
       "Tea",
-      "Bike commuting",
+      "Bike Commuting",
       "Squash",
       "Economics",
       "Rubiks cubes",
-      "Gtd",
-      "Game of thrones",
+      "GTD",
+      "Game of Thrones",
       "French language"
     ],
     "team": "FP&A"
@@ -713,7 +713,7 @@
     ],
     "tags": [
       "Poetry",
-      "Crossfit",
+      "CrossFit",
       "Boxing",
       "Poker",
       "Ruby",
@@ -749,7 +749,7 @@
     "tags": [
       "Movies",
       "Food",
-      "Asian food"
+      "Asian Food"
     ],
     "team": "Engineering"
   },
@@ -780,8 +780,8 @@
       "Painting",
       "Biking",
       "Reading",
-      "Barry's bootcamp",
-      "Art and design"
+      "Barry's Bootcamp",
+      "Art and Design"
     ],
     "team": "Engineering"
   },
@@ -808,7 +808,7 @@
       }
     ],
     "tags": [
-      "Machine learning",
+      "Machine Learning",
       "Yoga"
     ],
     "team": "Engineering"
