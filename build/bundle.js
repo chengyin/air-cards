@@ -120,7 +120,8 @@
 	  'san francisco giants': 'Baseball',
 	  'golden state warriors': 'Basketball',
 	  'react': 'JavaScript',
-	  'sushi': 'Asian Food'
+	  'sushi': 'Asian Food',
+	  'parenting': 'Being a Parent'
 	};
 
 	// Clean up tags a bit
@@ -205,7 +206,7 @@
 	  var stats = person.stats || [];
 	  var imageURL = 'src/img/' + person.firstName.toLowerCase() + '_' + person.lastName.toLowerCase() + '.jpg';
 
-	  div.innerHTML = '\n<div class="air-card-container">\n  <div class="air-card" style="background-color: ' + color + '; border-color: ' + color + ';">\n    <div class="air-card__image">\n      <a href="' + person.profile + '" target="_blank">\n        <div class="image" style="background-image:url(' + imageURL + ')"></div>\n      </a>\n    </div>\n    <div class="air-card__name">\n      ' + person.firstName + ' ' + person.lastName + '\n      <div class="air-card__icons">\n        <i title="' + titleLine + '" class="icon ' + teamIcon + '"></i>\n      </div>\n    </div>\n    <div class="air-card__role">\n      ' + titleLine + '\n    </div>\n    <div class="air-card__info">\n      <div class="air-card__info__value">\n        <table class="air-card__stats">\n          <tbody>\n            ' + getStatHTML(stats[0]) + '\n            ' + getStatHTML(stats[1]) + '\n            ' + getStatHTML(stats[2]) + '\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n';
+	  div.innerHTML = '\n<div class="air-card-container">\n  <div class="air-card" style="background-color: ' + color + '; border-color: ' + color + ';">\n    <div class="air-card__image">\n      <a href="' + person.profile + '" target="_blank">\n        <div class="image" style="background-image:url(' + imageURL + ')"></div>\n      </a>\n    </div>\n    <div class="air-card__content">\n      <div class="air-card__name">\n        ' + person.firstName + ' ' + person.lastName + '\n        <div class="air-card__icons">\n          <i title="' + titleLine + '" class="icon ' + teamIcon + '"></i>\n        </div>\n      </div>\n      <div class="air-card__role">\n        ' + titleLine + '\n      </div>\n      <div class="air-card__info">\n        <div class="air-card__info__value">\n          <table class="air-card__stats">\n            <tbody>\n              ' + getStatHTML(stats[0]) + '\n              ' + getStatHTML(stats[1]) + '\n              ' + getStatHTML(stats[2]) + '\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n';
 
 	  return div;
 	};

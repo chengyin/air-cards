@@ -5206,31 +5206,66 @@ h1 {
   color: white;
 }
 
-.air-card__image {
-  position: relative;
+@media (min-width: 735px) {
+  .air-card__image {
+    position: relative;
+  }
+
+  .air-card__image:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .air-card__image > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .air-card__image .image {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
-.air-card__image:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 100%;
-}
+@media (max-width: 735px) {
+  .air-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 
-.air-card__image > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+  .air-card__content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 0;
+  }
 
-.air-card__image .image {
-  height: 100%;
-  width: 100%;
-  border-radius: 12px 12px 0 0;
-  background-position: center center;
-  background-size: cover;
+  .air-card__image {
+    margin-right: 1em;
+  }
+
+  .air-card__image .image {
+    background-size: contain;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    height: 150px;
+    width: 150px;
+  }
 }
 
 .air-card__name,
