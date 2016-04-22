@@ -221,27 +221,36 @@
 	  header.addEventListener('mouseleave', collapse, false);
 
 	  getTagElements(getAllTags(people), function (tag) {
-	    collapse();
+	    var filter = function filter() {
+	      collapse();
 
-	    if (tag) {
-	      filterHeader.innerHTML = 'Ask us about <strong>' + tag + '</strong>';
-	    } else {
-	      filterHeader.innerHTML = '';
-	    }
-
-	    isotope.arrange({
-	      filter: function filter(elem) {
-	        if (!tag) {
-	          return true;
-	        }
-
-	        var id = parseInt(elem.getAttribute('data-id'), 10);
-	        var person = people[id];
-	        var tags = person.tags || [];
-
-	        return tags.indexOf(tag) !== -1;
+	      if (tag) {
+	        filterHeader.innerHTML = 'Ask us about <strong>' + tag + '</strong>';
+	      } else {
+	        filterHeader.innerHTML = '';
 	      }
-	    });
+
+	      isotope.arrange({
+	        filter: function filter(elem) {
+	          if (!tag) {
+	            return true;
+	          }
+
+	          var id = parseInt(elem.getAttribute('data-id'), 10);
+	          var person = people[id];
+	          var tags = person.tags || [];
+
+	          return tags.indexOf(tag) !== -1;
+	        }
+	      });
+	    };
+
+	    if (document.body.scrollTop > tagsContainer.offsetTop) {
+	      document.body.scrollTop = tagsContainer.offsetTop;
+	      setTimeout(filter, 100);
+	    } else {
+	      filter();
+	    }
 	  }).forEach(function (tag) {
 	    return tagsInner.appendChild(tag);
 	  });
