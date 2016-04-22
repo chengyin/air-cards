@@ -76,6 +76,8 @@ const tagRemapping = {
   'parenting': 'Being a Parent',
   'french language': 'French',
   'the south': 'Southern hospitality',
+  'raising sons': 'Being a Parent',
+  'raising daughters': 'Being a Parent',
 };
 
 // Clean up tags a bit
