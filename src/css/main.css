@@ -1,6 +1,10 @@
 @import "../../node_modules/airbnb-o2/build/o2.css";
 @import "../../node_modules/airbnb-o2/build/o2-fonts.css";
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: #edefed;
 }
@@ -20,7 +24,10 @@ h1 {
 }
 
 #tags {
+  height: 100px;
   margin: 0 -4px;
+  overflow: hidden;
+  transition: 200ms ease height;
 }
 
 .tag {
@@ -190,4 +197,30 @@ h1 {
   font-size: 20px;
   margin-left: 4px;
   padding: 2px 4px;
+}
+
+.header-more {
+  font-size: 2em;
+  line-height: 0;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.header-more::before {
+  border-color: white;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.6em;
+  opacity: 0.75;
+  position: relative;
+  top: 0;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 0.6em;
+}
+
+.expanded .header-more {
+  visibility: hidden;
 }
