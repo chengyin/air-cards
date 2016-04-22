@@ -74,7 +74,7 @@ const tagRemapping = {
   'react': 'JavaScript',
   'sushi': 'Asian Food',
   'parenting': 'Being a Parent',
-  'french language': 'french',
+  'french language': 'French',
   'the south': 'Southern hospitality',
 };
 
