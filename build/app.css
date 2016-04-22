@@ -5134,9 +5134,6 @@ h1 {
   height: 70px;
   margin: 0 -4px;
   overflow: hidden;
-}
-
-.collapsed #tags {
   transition: 200ms ease height;
 }
 
@@ -5206,31 +5203,67 @@ h1 {
   color: white;
 }
 
-.air-card__image {
-  position: relative;
+@media (min-width: 735px) {
+  .air-card__image {
+    position: relative;
+  }
+
+  .air-card__image:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .air-card__image > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .air-card__image .image {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
-.air-card__image:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 100%;
-}
+@media (max-width: 735px) {
+  .air-card__profile {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 
-.air-card__image > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+  .air-card__content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 0;
+  }
 
-.air-card__image .image {
-  height: 100%;
-  width: 100%;
-  border-radius: 12px 12px 0 0;
-  background-position: center center;
-  background-size: cover;
+  .air-card__image {
+    margin-bottom: -1px;
+    margin-right: 0.5em;
+  }
+
+  .air-card__image .image {
+    background-size: cover;
+    border-top-left-radius: 12px;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 .air-card__name,
@@ -5282,6 +5315,14 @@ h1 {
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
+  position: relative;
+}
+
+.air-card__name .air-card__icons {
+  font-size: 24px;
+  position: absolute;
+  top: -6px;
+  right: 0;
 }
 
 .air-card__hr {
@@ -5316,7 +5357,6 @@ h1 {
 }
 
 .air-card__footer .icon {
-  font-size: 20px;
   margin-left: 4px;
   padding: 2px 4px;
 }
@@ -5345,4 +5385,8 @@ h1 {
 
 .expanded .header-more {
   visibility: hidden;
+}
+
+#filter-header {
+  margin: 0 10px 10px;
 }

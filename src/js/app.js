@@ -34,7 +34,7 @@ const TEAMS = {
   },
   'VR North America': {
     icon: 'icon-castle',
-    color: ''
+    color: '#ffb400'
   },
   'Mysteries': {
     icon: 'icon-question-alt',
