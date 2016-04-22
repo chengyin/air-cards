@@ -27628,7 +27628,9 @@
 				"Sailing",
 				"Vinyl",
 				"Travel",
-				"Sports"
+				"Sports",
+				"Craft beer",
+				"Wine"
 			],
 			"team": "Engineering"
 		},
