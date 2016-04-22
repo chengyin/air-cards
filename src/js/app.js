@@ -184,7 +184,9 @@ const render = () => {
   const collapse = () => {
     tagsContainer.style.height = '';
     header.classList.remove('expanded');
-    header.classList.add('collapsed');
+    setTimeout(() => {
+      header.classList.add('collapsed');
+    }, 0);
   };
 
   header.addEventListener('touchstart', expand, false);
