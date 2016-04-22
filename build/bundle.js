@@ -27744,12 +27744,12 @@
 					"value": "16"
 				},
 				{
-					"label": "Continents Traveled in 2014",
-					"value": "4"
+					"label": "Rubik Cube Solving time",
+					"value": "<50s"
 				},
 				{
-					"label": "Rubik Cube Solving time",
-					"value": "60s-"
+					"label": "Mile Time",
+					"value": ">30m"
 				}
 			],
 			"tags": [
