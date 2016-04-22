@@ -5134,9 +5134,6 @@ h1 {
   height: 70px;
   margin: 0 -4px;
   overflow: hidden;
-}
-
-.collapsed #tags {
   transition: 200ms ease height;
 }
 

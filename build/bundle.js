@@ -280,26 +280,28 @@
 	    setTimeout(function () {
 	      collapse();
 
-	      if (tag) {
-	        filterHeader.innerHTML = 'Talk to us about <strong>' + tag + '</strong>:';
-	      } else {
-	        filterHeader.innerHTML = '';
-	      }
-
-	      isotope.arrange({
-	        filter: function filter(elem) {
-	          if (!tag) {
-	            return true;
-	          }
-
-	          var id = parseInt(elem.getAttribute('data-id'), 10);
-	          var person = people[id];
-	          var tags = person.tags || [];
-
-	          return tags.indexOf(tag) !== -1;
+	      setTimeout(function () {
+	        if (tag) {
+	          filterHeader.innerHTML = 'Talk to us about <strong>' + tag + '</strong>:';
+	        } else {
+	          filterHeader.innerHTML = '';
 	        }
-	      });
-	    }, 100);
+
+	        isotope.arrange({
+	          filter: function filter(elem) {
+	            if (!tag) {
+	              return true;
+	            }
+
+	            var id = parseInt(elem.getAttribute('data-id'), 10);
+	            var person = people[id];
+	            var tags = person.tags || [];
+
+	            return tags.indexOf(tag) !== -1;
+	          }
+	        });
+	      }, 200);
+	    }, 50);
 	  }).forEach(function (tag) {
 	    return tagsInner.appendChild(tag);
 	  });
