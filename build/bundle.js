@@ -83,7 +83,7 @@
 	  },
 	  'VR North America': {
 	    icon: 'icon-castle',
-	    color: ''
+	    color: '#ffb400'
 	  },
 	  'Mysteries': {
 	    icon: 'icon-question-alt',
@@ -27371,7 +27371,14 @@
 					"value": "8"
 				}
 			],
-			"tags": [],
+			"tags": [
+				"Mathematics",
+				"Piano",
+				"Wine",
+				"books",
+				"korean food",
+				"journalism"
+			],
 			"team": "Communications"
 		},
 		{
@@ -27384,16 +27391,16 @@
 			"role": "Experience Designer",
 			"stats": [
 				{
-					"label": "Guitars",
-					"value": "5"
+					"label": "Years Gardening",
+					"value": "4"
 				},
 				{
-					"label": "Hot Sauces",
-					"value": "21"
+					"label": "Other Poyan's Met",
+					"value": "0"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Days in SF",
+					"value": "8"
 				}
 			],
 			"tags": [
@@ -27482,19 +27489,19 @@
 			"firstName": "Crystal",
 			"lastName": "Hou",
 			"profile": "https://one.airbnb.com/people/crystal_hou",
-			"role": "Software Engineer",
+			"role": "Communication Manager, Greater China",
 			"stats": [
 				{
-					"label": "",
-					"value": ""
+					"label": "Dog",
+					"value": "1"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Cities visited for NYE",
+					"value": "8"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Times Swum",
+					"value": "0"
 				}
 			],
 			"tags": [],
@@ -27510,7 +27517,7 @@
 			"role": "Engineering Manager",
 			"stats": [
 				{
-					"label": "Gray hair before kids",
+					"label": "Gray hairs before kids",
 					"value": "0"
 				},
 				{
@@ -27612,7 +27619,7 @@
 					"value": "315lbs"
 				},
 				{
-					"label": "Last.fm Play Count / Scrobbles",
+					"label": "Last.fm Scrobbles",
 					"value": "210k"
 				},
 				{
@@ -27625,7 +27632,12 @@
 				"React",
 				"iOS",
 				"CrossFit",
-				"Sailing"
+				"Sailing",
+				"Vinyl",
+				"Travel",
+				"Sports",
+				"Craft beer",
+				"Wine"
 			],
 			"team": "Engineering"
 		},
@@ -27714,6 +27726,8 @@
 				}
 			],
 			"tags": [
+				"being middle child",
+				"raising sons",
 				"Baseball",
 				"Basketball",
 				"Being a Parent",
@@ -27920,10 +27934,10 @@
 			"firstName": "Nicholas",
 			"lastName": "Roth",
 			"profile": "https://one.airbnb.com/people/nicholas_roth",
-			"role": "Manager, Strategic Development",
+			"role": "Strategic Development",
 			"stats": [
 				{
-					"label": "Mid School Rock Band",
+					"label": "Mid School Rock Albums",
 					"value": "1"
 				},
 				{
@@ -27931,7 +27945,7 @@
 					"value": "15"
 				},
 				{
-					"label": "Times cooked in the past 4yrs",
+					"label": "Meals Cooked Since Graduation",
 					"value": "2"
 				}
 			],
@@ -27995,16 +28009,16 @@
 			"role": "Software Engineer",
 			"stats": [
 				{
-					"label": "Years Drinking only water",
+					"label": "Power level",
+					"value": "-2147483647"
+				},
+				{
+					"label": "Years drinking nothing but water",
 					"value": "4"
 				},
 				{
-					"label": "Aunts",
-					"value": "11"
-				},
-				{
-					"label": "Crazy Aunts",
-					"value": "9"
+					"label": "Thinks in binary",
+					"value": "1"
 				}
 			],
 			"tags": [
