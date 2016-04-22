@@ -76,7 +76,8 @@
 	  'boston red sox': 'Baseball',
 	  'san francisco giants': 'Baseball',
 	  'golden state warriors': 'Basketball',
-	  'react': 'JavaScript'
+	  'react': 'JavaScript',
+	  'sushi': 'Asian Food'
 	};
 
 	// Clean up tags a bit
