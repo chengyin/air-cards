@@ -3,7 +3,7 @@ const Isotope = require('isotope-layout/dist/isotope.pkgd.js');
 const _ = require('lodash');
 
 require('../css/main.css');
-let people = require('json!./people.json');
+let people = _.shuffle(require('json!./people.json'));
 
 const COLORS = [
   '#7B0051',
@@ -14,6 +14,50 @@ const COLORS = [
   '#3fb34f',
   '#ffaa91'
 ];
+
+const TEAMS = {
+  'Talent Partners': {
+    icon: 'icon-group-alt',
+    color: '#7B0051'
+  },
+  'Engineering': {
+    icon: 'icon-code',
+    color: '#00d1c1'
+  },
+  'Communications': {
+    icon: 'icon-intercom',
+    color: '#ffb400'
+  },
+  'Design': {
+    icon: 'icon-edit',
+    color: '#007a87'
+  },
+  'VR North America': {
+    icon: 'icon-castle',
+    color: ''
+  },
+  'Mysteries': {
+    icon: 'icon-question-alt',
+    color: '#ff5a5f'
+  },
+  'ITX': {
+    icon: 'icon-laptop',
+    color: '#ff5a5f'
+  },
+  'Public Policy - Justice': {
+    icon: 'icon-description-alt',
+    color: '#3fb34f'
+  },
+  'Data Engineering': {
+    icon: 'icon-stats',
+    color: '#007a87'
+  },
+  'FP&A': {
+    icon: 'icon-currency-usd',
+    color: '#ffaa91'
+  }
+};
+
 
 const tagRemapping = {
   'bicycles': 'Cycling',
@@ -96,7 +140,13 @@ const getStatHTML = (stat) => {
 
 const getCardElement = (person, id) => {
   const div = document.createElement('div');
-  const color = COLORS[rand(COLORS.length)];
+  // const color = COLORS[rand(COLORS.length)];
+
+  const { team, role } = person;
+  const color = TEAMS[team].color;
+  const teamIcon = TEAMS[team].icon;
+
+  const titleLine = `${team} / ${role}`;
 
   div.className = 'grid-item';
   div.setAttribute('data-id', id);
@@ -108,14 +158,19 @@ const getCardElement = (person, id) => {
 <div class="air-card-container">
   <div class="air-card" style="background-color: ${color}; border-color: ${color};">
     <div class="air-card__image">
-      <a href="${person.profile}">
+      <a href="${person.profile}" target="_blank">
         <div class="image" style="background-image:url(${imageURL})"></div>
       </a>
     </div>
     <div class="air-card__name">
       ${person.firstName} ${person.lastName}
+      <div class="air-card__icons">
+        <i title="${titleLine}" class="icon ${teamIcon}"></i>
+      </div>
     </div>
-    <div class="air-card__role">${person.team} / ${person.role}</div>
+    <div class="air-card__role">
+      ${titleLine}
+    </div>
     <div class="air-card__info">
       <div class="air-card__info__value">
         <table class="air-card__stats">
@@ -226,8 +281,6 @@ const render = () => {
       filter();
     }
   }).forEach(tag => tagsInner.appendChild(tag));
-
-
 };
 
 render();

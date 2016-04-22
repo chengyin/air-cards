@@ -5108,13 +5108,17 @@ td.show-lg {
 
 
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: #edefed;
 }
 
 header {
   left: 0;
-  padding: 20px 0;
+  padding: 20px 5px;
   right: 0;
   top: 0;
   z-index: 1;
@@ -5127,7 +5131,25 @@ h1 {
 }
 
 #tags {
+  height: 70px;
   margin: 0 -4px;
+  overflow: hidden;
+}
+
+.collapsed #tags {
+  transition: 200ms ease height;
+}
+
+/* Prevent the tags from being clickable while expanding */
+.expanding #tags::after {
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .tag {
@@ -5156,10 +5178,16 @@ h1 {
   background: white;
   margin: 5px;
   padding: 5px;
-  width: calc(33.3333% - 10px);
+  width: calc(25% - 10px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1223px) {
+  .grid-item {
+    width: calc(33.3333% - 10px);
+  }
+}
+
+@media (max-width: 850px) {
   .grid-item {
     width: calc(50% - 10px);
   }
@@ -5178,18 +5206,50 @@ h1 {
   color: white;
 }
 
-.air-card__image > img {
+.air-card__image {
+  position: relative;
+}
+
+.air-card__image:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+.air-card__image > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.air-card__image .image {
+  height: 100%;
   width: 100%;
   border-radius: 12px 12px 0 0;
+  background-position: center center;
+  background-size: cover;
 }
 
 .air-card__name,
+.air-card__role,
 .air-card__info {
   margin: 10px;
 }
 
 .air-card__name {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.air-card__role {
+  margin-top: 0;
   margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .air-card__info__label {
@@ -5208,12 +5268,12 @@ h1 {
 }
 
 @media (min-width: 736px) {
-  .air-card__info__label {
+  .air-card__info__label.one-line {
     float: left;
     width: 50px;
   }
 
-  .air-card__info__value {
+  .air-card__info__value.one-line {
     width: calc(100% - 50px);
   }
 }
@@ -5259,4 +5319,30 @@ h1 {
   font-size: 20px;
   margin-left: 4px;
   padding: 2px 4px;
+}
+
+.header-more {
+  font-size: 2em;
+  line-height: 0;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.header-more::before {
+  border-color: white;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.6em;
+  opacity: 0.75;
+  position: relative;
+  top: 0;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 0.6em;
+}
+
+.expanded .header-more {
+  visibility: hidden;
 }
