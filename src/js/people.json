@@ -168,7 +168,7 @@
       },
       {
         "label": "Hawk Hill Avg Time",
-        "value": "9h 44m"
+        "value": "9m 44s"
       }
     ],
     "tags": [
@@ -688,16 +688,16 @@
     "role": "Software Engineer",
     "stats": [
       {
-        "label": "",
-        "value": ""
+        "label": "Cities lived for more than 1 yrs",
+        "value": "6"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Magic number for me",
+        "value": "11"
       },
       {
-        "label": "",
-        "value": ""
+        "label": "Spicy tolerance",
+        "value": "5/5"
       }
     ],
     "tags": [],
