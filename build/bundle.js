@@ -276,11 +276,12 @@
 	  header.addEventListener('mouseleave', collapse, false);
 
 	  getTagElements(getAllTags(people), function (tag) {
-	    var filter = function filter() {
+	    document.body.scrollTop = 0;
+	    setTimeout(function () {
 	      collapse();
 
 	      if (tag) {
-	        filterHeader.innerHTML = 'Ask us about <strong>' + tag + '</strong>';
+	        filterHeader.innerHTML = 'Talk to us about <strong>' + tag + '</strong>:';
 	      } else {
 	        filterHeader.innerHTML = '';
 	      }
@@ -298,14 +299,7 @@
 	          return tags.indexOf(tag) !== -1;
 	        }
 	      });
-	    };
-
-	    if (document.body.scrollTop > tagsContainer.offsetTop) {
-	      document.body.scrollTop = tagsContainer.offsetTop;
-	      setTimeout(filter, 100);
-	    } else {
-	      filter();
-	    }
+	    }, 100);
 	  }).forEach(function (tag) {
 	    return tagsInner.appendChild(tag);
 	  });
