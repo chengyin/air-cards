@@ -93,27 +93,8 @@ const getCardElement = (person, id) => {
     <div class="air-card__name">
       ${person.firstName} ${person.lastName}
     </div>
+    <div class="air-card__role">${person.team} / ${person.role}</div>
     <div class="air-card__info">
-      <div class="air-card__info__label">
-        Team
-      </div>
-      <div class="air-card__info__value">
-        ${person.team}
-      </div>
-    </div>
-    <div class="air-card__info">
-      <div class="air-card__info__label">
-        Role
-      </div>
-      <div class="air-card__info__value">
-        ${person.role}
-      </div>
-    </div>
-    <div class="air-card__hr"></div>
-    <div class="air-card__info">
-      <div class="air-card__info__label">
-        Stats
-      </div>
       <div class="air-card__info__value">
         <table class="air-card__stats">
           <tbody>
@@ -123,14 +104,6 @@ const getCardElement = (person, id) => {
           </tbody>
         </table>
       </div>
-    </div>
-    <div class="air-card__footer">
-      <a href="mailto:${person.email}">
-        <i class="icon icon-white icon-envelope"></i>
-      </a>
-      <a href="${person.profile}">
-        <i class="icon icon-white icon-birdhouse"></i>
-      </a>
     </div>
   </div>
 </div>
