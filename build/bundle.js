@@ -27384,16 +27384,16 @@
 			"role": "Experience Designer",
 			"stats": [
 				{
-					"label": "Guitars",
-					"value": "5"
+					"label": "Years Gardening",
+					"value": "4"
 				},
 				{
-					"label": "Hot Sauces",
-					"value": "21"
+					"label": "Other Poyan's Met",
+					"value": "0"
 				},
 				{
-					"label": "",
-					"value": ""
+					"label": "Days in SF",
+					"value": "8"
 				}
 			],
 			"tags": [
